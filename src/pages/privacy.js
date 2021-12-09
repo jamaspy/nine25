@@ -163,7 +163,7 @@ const aboutus = () => {
         </p>
       </div>
       <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
-        <div className="container rounded-xl h-60 bg-white shadow-sm p-4">
+        <div className="container rounded-xl bg-white shadow-sm p-12">
           <p className="text-2xl font-semibold text-center">
             Still have questions? Please, contact us
           </p>

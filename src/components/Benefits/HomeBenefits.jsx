@@ -8,9 +8,9 @@ const HomeBenefits = ({ children }) => {
         <Benefit
           key={index}
           title={benefit.title}
+          paragraphs={benefit.paragraphs}
           isWide={benefit.isWide}
           isComingSoon={benefit.isComingSoon}
-          subtitle={benefit.subtitle}
         />
       ))}
     </div>

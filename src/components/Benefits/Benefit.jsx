@@ -1,10 +1,10 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import { HiOutlineChevronRight } from "react-icons/hi";
 import SpendSVG from "../../assets/img_spend.svg";
 import ManageSVG from "../../assets/img_manage.svg";
 import InvestSVG from "../../assets/img_invest.svg";
 import ComingSoonSVG from "../../assets/coming_soon.svg";
-const Benefit = ({ title, subtitle, key, isWide, isComingSoon }) => {
+const Benefit = ({ title, paragraphs, key, isWide, isComingSoon }) => {
   const renderImage = () => {
     switch (title) {
       case "Spend":
@@ -36,7 +36,14 @@ const Benefit = ({ title, subtitle, key, isWide, isComingSoon }) => {
         )}
         <div className="flex-1 p-4">
           <p className="text-xl font-medium">{title}</p>
-          <p className="text-base">{subtitle}</p>
+          {paragraphs.map((paragraph, index) => (
+            <p key={index} className="text-base mb-2">
+              {paragraph}
+            </p>
+          ))}
+          <p className="text-secondary hover:text-hover-blue hover:cursor-pointer flex flex-row items-center justify-start">
+            Read More <HiOutlineChevronRight className="ml-4" />
+          </p>
         </div>
         {isWide && (
           <div className="flex-1 flex items-center justify-center">
@@ -45,11 +52,11 @@ const Benefit = ({ title, subtitle, key, isWide, isComingSoon }) => {
         )}
       </div>
       {isComingSoon && (
-        <div className="w-full bg-secondary p-2 relative">
+        <div className="w-full bg-secondary py-8 relative">
           <p className="text-white">
             Shop with Nine25 card & pay your bills with direct debit.
           </p>
-          <div className="absolute right-0 -top-24">
+          <div className="absolute right-0 -top-20">
             <ComingSoonSVG />
           </div>
         </div>

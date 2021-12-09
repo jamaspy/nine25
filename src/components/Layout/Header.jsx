@@ -13,12 +13,12 @@ export default function Menu({ fixed }) {
           <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 ">
             <div className="w-full px-4 mx-auto flex flex-wrap items-center justify-between">
               <div className="w-full h-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-                <a
+                <Link
                   className="text-xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap "
-                  href="#pablo"
+                  href="/"
                 >
                   <LogoSVG />
-                </a>
+                </Link>
                 <div
                   role="button"
                   className=" cursor-pointer text-3xl leading-none border border-solid border-transparent flex items-center justify-center lg:hidden outline-none focus:outline-none rounded-full"
