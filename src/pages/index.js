@@ -11,7 +11,6 @@ const IndexPage = () => {
       <Hero />
       <HomeBenefits />
       <HomeFeatures />
-
       <Cta />
     </Layout>
   );

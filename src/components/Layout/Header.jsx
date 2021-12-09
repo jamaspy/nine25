@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
-import { SendButton } from "../Buttons";
+import { Download_Blue } from "../Buttons";
 import LogoSVG from "../../assets/logo.svg";
 export default function Menu({ fixed }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
@@ -69,7 +69,7 @@ export default function Menu({ fixed }) {
                     </Link>
                   </li> */}
                 </ul>
-                <SendButton />
+                <Download_Blue />
               </div>
             </div>
           </nav>

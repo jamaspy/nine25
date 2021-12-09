@@ -1,9 +1,10 @@
 import React from "react";
 import { Layout } from "../components/Layout";
+import ContactForm from "../components/Form";
 const aboutus = () => {
   return (
     <Layout>
-      <div className="container m-auto px-8 md:px-24">
+      <div className="container m-auto px-8 md:px-36">
         <p className="text-2xl font-semibold">Privacy Policy</p>
         <p className="text-xs mb-4">Last updated: March 5, 2021</p>
         <p className="mb-4">
@@ -160,6 +161,14 @@ const aboutus = () => {
           that you transmit to us. You use the Services and provide us with your
           Personal Information at your own risk.
         </p>
+      </div>
+      <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
+        <div className="container rounded-xl h-60 bg-white shadow-sm p-4">
+          <p className="text-2xl font-semibold text-center">
+            Still have questions? Please, contact us
+          </p>
+          <ContactForm />
+        </div>
       </div>
     </Layout>
   );

@@ -1,13 +1,14 @@
 import React from "react";
-const SendButton = ({ className }) => {
+const SendButton = ({ className, clickFn, type }) => {
   return (
-    <div
-      role="button"
-      aria-label="download app"
-      className={`bg-secondary hover:bg-secondary-hover text-white border rounded-full px-8 py-2 flex items-center justify-center cursor-pointer  ${className}`}
+    <button
+      type={type}
+      onClick={clickFn}
+      aria-label="send contact form"
+      className={`bg-primary hover:bg-primary-hover text-white border rounded-full px-8 py-4 flex items-center justify-center cursor-pointer  ${className}`}
     >
-      <p className="text-tertiary">Download App</p>
-    </div>
+      <p className="text-white">Send</p>
+    </button>
   );
 };
 

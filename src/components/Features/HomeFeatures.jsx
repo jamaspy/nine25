@@ -18,19 +18,6 @@ const HomeFeatures = () => {
             subtitle={feature.subtitle}
           />
         ))}
-        {/* <div className="flex flex-col items-center justify-center my-2">
-        <StaticImage
-          quality={100}
-          src="../../images/img_privacy.svg"
-          alt="privacy"
-        />
-
-        <p className="mb-1 font-medium">Security</p>
-        <p className="text-sm">
-          Your privacy is number one and there’s no cross app tracking. We’ve
-          got your back.
-        </p>
-      </div> */}
       </div>
     </div>
   );
