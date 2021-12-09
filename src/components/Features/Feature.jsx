@@ -17,13 +17,10 @@ const Feature = ({ title, subtitle, imgNumber }) => {
     }
   };
   return (
-    <div
-      key={imgNumber}
-      className="flex-1 flex flex-col items-center justify-center m-12"
-    >
-      <div className="rounded-full mb-1 overflow-hidden">{renderImage()}</div>
-      <p className="my-2 font-medium text-blacked text-xl">{title}</p>
-      <p className="text-lg text-center">{subtitle}</p>
+    <div key={imgNumber} className="flex-1 flex flex-col items-center m-12">
+      <div className="">{renderImage()}</div>
+      <p className="font-medium text-blacked text-xl">{title}</p>
+      <p className="">{subtitle}</p>
     </div>
   );
 };
