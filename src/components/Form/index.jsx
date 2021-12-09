@@ -1,5 +1,6 @@
 import React from "react";
 import SendButton from "../Buttons/Send";
+import Switch from "./Switch";
 const index = () => {
   return (
     <form action="https://formspree.io/f/{form_id}" method="post">
@@ -29,10 +30,7 @@ const index = () => {
         />
       </div>
       <div className="my-4">
-        <input name="optin" type="checkbox" />
-        <label htmlFor="optin" className="ml-4">
-          I want to get updates &amp; offers
-        </label>
+        <Switch />
       </div>
       <div className="w-full flex items-center justify-center">
         <SendButton type="submit">Submit</SendButton>
