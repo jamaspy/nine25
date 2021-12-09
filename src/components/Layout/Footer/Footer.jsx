@@ -4,7 +4,7 @@ import Socials from "./Socials";
 import Disclaimer from "./Disclaimer";
 const Footer = () => {
   return (
-    <div className="bg-gray-light p-2">
+    <div className="bg-blacked text-white p-2">
       <Links />
       <Socials />
       <Disclaimer />

@@ -1,20 +1,20 @@
 export const company_footer_links = [
-  { label: "About", url: "/about" },
-  { label: "FAQ", url: "/contact" },
-  { label: "Blog", url: "/privacy" },
-  { label: "Contact us", url: "/terms" },
+  { label: "About", to: "/aboutus" },
+  { label: "FAQ", to: "/faq" },
+  { label: "Blog", to: "/blog" },
+  { label: "Contact us", to: "/contactus" },
 ];
 
 export const discovery_footer_links = [
-  { label: "Debit card", url: "/about" },
-  { label: "Money management", url: "/about" },
-  { label: "Investing", url: "/about" },
+  { label: "Debit card", to: "/about" },
+  { label: "Money management", to: "/moneymanagement" },
+  { label: "Investing", to: "/investing" },
 ];
 export const learn_footer_links = [
-  { label: "Budgeting", url: "/about" },
-  { label: "ESG investing", url: "/about" },
+  { label: "Budgeting", to: "/budgeting" },
+  { label: "ESG investing", to: "/esg" },
 ];
 export const legal_footer_links = [
-  { label: "Privacy policy", url: "/about" },
-  { label: "Terms", url: "/about" },
+  { label: "Privacy policy", to: "/privacy" },
+  { label: "Terms", to: "/terms" },
 ];
