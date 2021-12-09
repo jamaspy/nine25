@@ -9,9 +9,17 @@ module.exports = {
     "gatsby-plugin-sitemap",
     `gatsby-plugin-postcss`,
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/, // See below to configure properly
+        },
+      },
+    },
+    {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/assets/logo.svg",
       },
     },
     {

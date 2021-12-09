@@ -2,6 +2,8 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { radialFill } from "../../styles/textGradientStyleObjects";
 import { Download_Android, Download_IOS } from "../Buttons";
+import HeroSVG from "../../assets/hero.svg";
+import StarSVG from "../../assets/yellow_star.svg";
 const index = () => {
   return (
     <div className="flex flex-col md:flex-row relative overflow-hidden">
@@ -23,15 +25,12 @@ const index = () => {
             <Download_Android className="hidden md:inline-block" />
           </div>
         </div>
-
-        <StaticImage
-          src="../../images/yellow_star.svg"
-          quality={100}
-          className="absolute -bottom-20 left-0 hidden md:block"
-        />
+        <div className="absolute -bottom-20 left-0 hidden md:block">
+          <StarSVG />
+        </div>
       </div>
       <div className="flex-1 flex items-center justify-end md:mr-24">
-        <StaticImage src="../../images/hero.svg" quality={100} />
+        <HeroSVG />
       </div>
     </div>
   );

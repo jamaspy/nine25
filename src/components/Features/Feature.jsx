@@ -1,18 +1,17 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import PrivacySVG from "../../assets/img_privacy.svg";
+import InnovationSVG from "../../assets/img_innovation.svg";
+import SecuritySVG from "../../assets/img_security.svg";
 const Feature = ({ title, subtitle, imgNumber }) => {
   const renderImage = () => {
     switch (imgNumber) {
       case 0:
-        return <StaticImage src="../../images/img_privacy.svg" alt="privacy" />;
+        return <PrivacySVG />;
       case 1:
-        return (
-          <StaticImage src="../../images/img_security.svg" alt="security" />
-        );
+        return <SecuritySVG />;
       case 2:
-        return (
-          <StaticImage src="../../images/img_innovation.svg" alt="innovation" />
-        );
+        return <InnovationSVG />;
       default:
         break;
     }
@@ -20,10 +19,10 @@ const Feature = ({ title, subtitle, imgNumber }) => {
   return (
     <div
       key={imgNumber}
-      className="flex-1 flex flex-col items-center justify-center mx-8"
+      className="flex-1 flex flex-col items-center justify-center m-12"
     >
-      <div className="rounded-full  mb-1 overflow-hidden">{renderImage()}</div>
-      <p className="mb-1 font-medium text-blacked text-xl">{title}</p>
+      <div className="rounded-full mb-1 overflow-hidden">{renderImage()}</div>
+      <p className="my-2 font-medium text-blacked text-xl">{title}</p>
       <p className="text-lg text-center">{subtitle}</p>
     </div>
   );

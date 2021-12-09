@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { HiMenu, HiOutlineX } from "react-icons/hi";
 import { SendButton } from "../Buttons";
+import LogoSVG from "../../assets/logo.svg";
 export default function Menu({ fixed }) {
   const [menuOpen, setMenuOpen] = React.useState(false);
   return (
@@ -16,7 +17,7 @@ export default function Menu({ fixed }) {
                   className="text-xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap "
                   href="#pablo"
                 >
-                  <StaticImage src="../../images/logo.svg" alt="logo" />
+                  <LogoSVG />
                 </a>
                 <div
                   role="button"

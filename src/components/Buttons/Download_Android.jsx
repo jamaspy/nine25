@@ -1,17 +1,12 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
+import PlaySVG from "../../assets/download_play.svg";
 const Download_Android = ({ className }) => {
-  console.log("🚀  TESTY:  : className ", className);
   return (
     <div
       aria-label="Download app on Play store"
-      className={`bg-blacked text-white border rounded-full px-8 flex items-center justify-center hover:cursor-pointer ${className}`}
+      className={`bg-blacked text-white border rounded-full px-8 py-4 flex items-center justify-center hover:cursor-pointer ${className} m-auto`}
     >
-      <StaticImage
-        src="../../images/download_play.svg"
-        backgroundColor="transparent"
-        quality={100}
-      />
+      <PlaySVG />
     </div>
   );
 };

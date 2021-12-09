@@ -4,8 +4,8 @@ import { home_features } from "./data/home_features";
 import { StaticImage } from "gatsby-plugin-image";
 const HomeFeatures = () => {
   return (
-    <>
-      <div className="w-full">
+    <div className="flex-1">
+      <div className="w-full pt-24">
         <p className="text-3xl text-center text-blacked font-semibold">
           What we provide
         </p>
@@ -32,7 +32,7 @@ const HomeFeatures = () => {
         </p>
       </div> */}
       </div>
-    </>
+    </div>
   );
 };
 
