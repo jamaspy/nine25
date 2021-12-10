@@ -25,7 +25,7 @@ const IndexPage = () => {
   };
 
   return (
-    <Layout>
+    <Layout device={checkDevice}>
       <SEO title="Home" />
       <Hero device={checkDevice} />
       <HomeBenefits />

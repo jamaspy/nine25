@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import { radialFill } from "../../styles/textGradientStyleObjects";
 import { Download_Android, Download_IOS } from "../Buttons";
 import HeroSVG from "../../assets/hero.svg";

@@ -1,18 +1,39 @@
 import React from "react";
+import { socialPlatofrms } from "../data";
+import {
+  GrInstagram,
+  GrFacebookOption,
+  GrTwitter,
+  GrLinkedinOption,
+} from "react-icons/gr";
+import { SiTiktok } from "react-icons/si";
 
-const Social = ({ platform }) => (
-  <div className="w-8 h-8 border rounded-full flex items-center justify-center mx-2">
-    <p>{platform}</p>
-  </div>
-);
+const renderIcon = (platform) => {
+  switch (platform) {
+    case "instagram":
+      return <GrInstagram />;
+    case "facebook":
+      return <GrFacebookOption />;
+    case "twitter":
+      return <GrTwitter />;
+    case "tiktok":
+      return <SiTiktok />;
+    case "linkedin":
+      return <GrLinkedinOption />;
+    default:
+      return null;
+  }
+};
 
 const Socials = () => {
+  console.log(socialPlatofrms);
   return (
-    <div className="w-full flex items-center justify-center my-4">
-      <Social platform="F" />
-      <Social platform="I" />
-      <Social platform="T" />
-      <Social platform="Y" />
+    <div className="w-full flex items-center justify-center  mt-8 mb-4">
+      {socialPlatofrms.map((platform) => (
+        <div className="w-8 h-8 cursor-pointer bg-gray-dark rounded-full flex items-center justify-center mx-2">
+          {renderIcon(platform)}
+        </div>
+      ))}
     </div>
   );
 };
