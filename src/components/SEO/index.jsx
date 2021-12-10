@@ -17,9 +17,8 @@ const SEO = ({ description, lang, meta, title }) => {
       }
     `
   );
-  console.log("🚀  TESTY:  : index : site", site);
+
   const keywords = site.siteMetadata.keywords;
-  console.log("🚀  TESTY:  : SEO : keywords ", keywords);
   const metaDescription = description || site.siteMetadata.description;
   const defaultTitle = site.siteMetadata?.title;
   return (

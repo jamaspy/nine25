@@ -8,7 +8,7 @@ const Links = () => {
     learn_footer_links,
     legal_footer_links,
   } = links;
-  console.log(company_footer_links);
+
   return (
     <div className="w-full flex flex-row justify-around items-start">
       <div className="flex flex-col">
