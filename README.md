@@ -54,7 +54,7 @@
 - [Gatsby Starter Documentation](https://www.gatsbyjs.org/docs/creating-a-static-site/)
 - [TailwindCSS Documentation (currently running v3)](https://tailwindcss.com/docs/)
 
-Breakpoints:
+### Breakpoints:
 
 ```shell
 sm	640px	@media (min-width: 640px) { ... }

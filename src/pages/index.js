@@ -4,10 +4,11 @@ import { HomeBenefits } from "../components/Benefits";
 import { Layout } from "../components/Layout";
 import Hero from "../components/Hero";
 import Cta from "../components/CTA";
-import { Carousel } from "../components/Carousel";
+import SEO from "../components/SEO";
 const IndexPage = () => {
   return (
     <Layout>
+      <SEO title="Home" />
       <Hero />
       <HomeBenefits />
       <HomeFeatures />

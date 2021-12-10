@@ -2,6 +2,10 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "nine25",
+    description: "The smartest way to spend, manage & invest your salary.",
+    author: "nine25",
+    keywords:
+      "nine25, nine25.com, nine25.com.au, nine25.com.au/blog, streaming, investment, innovation, finance, investor, EFT, crypto, salary, pay, payment, wages, stream salary",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -12,14 +16,20 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/, // See below to configure properly
+          include: /assets/, // This directory can ONLY hold *.svg files
         },
       },
     },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/assets/logo.svg",
+        name: `nine25.app`,
+        short_name: `nine25`,
+        start_url: `/`,
+        background_color: `#FF6363`,
+        theme_color: `#FF6363`,
+        display: `minimal-ui`,
+        icon: "src/assets/round_logo.svg",
       },
     },
     {

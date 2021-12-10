@@ -7,7 +7,7 @@ import StarSVG from "../../assets/yellow_star.svg";
 const index = () => {
   return (
     <div className="flex flex-col flex-shrink mt-12 md:flex-row md:justify-center relative overflow-hidden">
-      <div className="">
+      <div className="md:pl-4">
         <div className="flex flex-col items-center justify-center xl:justify-start lg:items-start lg:mt-24 lg:ml-24">
           <p className="text-4xl md:text-5xl font-black">Now Streaming:</p>
           <p
@@ -25,11 +25,11 @@ const index = () => {
             <Download_Android className="hidden lg:inline-block" />
           </div>
         </div>
-        <div className="absolute -bottom-20 left-0 hidden md:block">
+        <div className="absolute -bottom-10 left-0 hidden md:block">
           <StarSVG />
         </div>
       </div>
-      <div className="flex flex-shrink items-center -mt-36 md:mt-0 justify-end lg:mr-24">
+      <div className="flex flex-shrink items-center -mt-36 lg:mt-0 justify-end xl:mr-24 md:max-w-md lg:max-w-none">
         <HeroSVG />
       </div>
     </div>
