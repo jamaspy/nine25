@@ -10,7 +10,7 @@ const HomeFeatures = () => {
           What we provide
         </p>
       </div>
-      <div className="w-full flex flex-col md:flex-row justify-around border">
+      <div className="w-full flex flex-col md:flex-row justify-around">
         {home_features.map((feature, index) => (
           <Feature
             imgNumber={index}
