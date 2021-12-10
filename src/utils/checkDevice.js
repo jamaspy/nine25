@@ -1,5 +1,9 @@
 import { get } from "lodash";
 export const checkDevice = () => {
+  const isBrowser = typeof window !== "undefined";
+  if (!isBrowser) {
+    return;
+  }
   const navigator = get(window, ["navigator", "userAgent"], [])
     .split("(")[1]
     .split(")")[0];
