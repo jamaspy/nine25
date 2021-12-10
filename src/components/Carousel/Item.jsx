@@ -6,7 +6,7 @@ const Item = ({ title, description }) => {
     <div className="flex flex-row text-white h-full m-4">
       <div className="flex flex-col h-full items-center justify-center">
         <div className="h-12 w-12">
-          <StaticImage src="../../images/icon.png" />
+          <StaticImage src="../../assets/icon.png" />
         </div>
       </div>
       <div className="flex flex-col h-full  items-start justify-center ml-4">

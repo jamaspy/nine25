@@ -4,14 +4,15 @@ import { HomeBenefits } from "../components/Benefits";
 import { Layout } from "../components/Layout";
 import Hero from "../components/Hero";
 import Cta from "../components/CTA";
-import { Carousel } from "../components/Carousel";
+import Seo from "../components/SEO";
+import { checkDevice } from "../utils/checkDevice";
 const IndexPage = () => {
   return (
-    <Layout>
-      <Hero />
-      <HomeFeatures />
+    <Layout device={checkDevice}>
+      <Seo title="Home" />
+      <Hero device={checkDevice} />
       <HomeBenefits />
-      <Carousel />
+      <HomeFeatures />
       <Cta />
     </Layout>
   );

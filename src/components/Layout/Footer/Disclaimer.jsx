@@ -2,11 +2,11 @@ import React from "react";
 
 const Disclaimer = () => {
   return (
-    <div className="w-full flex items-center justify-center my-4">
+    <div className="w-full flex items-center justify-center mt-8 mb-4">
       <p className="text-xs">
-        Ut occaecat consequat duis nulla laborum reprehenderit consectetur ut
-        nisi incididunt. Ut occaecat consequat duis nulla laborum reprehenderit
-        consectetur ut nisi incididunt.
+        Nine25 App is a financial platform, not a bank. Debit cards, ETF
+        investing & cryptocurrency investing (all coming soon) will be provided
+        by Nine25’s partners.
       </p>
     </div>
   );

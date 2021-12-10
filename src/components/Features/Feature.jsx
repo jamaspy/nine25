@@ -1,13 +1,25 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-const Feature = ({ title, subtitle, key }) => {
+import PrivacySVG from "../../assets/img_privacy.svg";
+import InnovationSVG from "../../assets/img_innovation.svg";
+import SecuritySVG from "../../assets/img_security.svg";
+const Feature = ({ title, subtitle, imgNumber }) => {
+  const renderImage = () => {
+    switch (imgNumber) {
+      case 0:
+        return <PrivacySVG />;
+      case 1:
+        return <SecuritySVG />;
+      case 2:
+        return <InnovationSVG />;
+      default:
+        break;
+    }
+  };
   return (
-    <div key={key} className="flex flex-col items-center justify-center my-2">
-      <div className="rounded-full border w-12 h-12 mb-1 overflow-hidden">
-        <StaticImage src="../images/icon.png" />
-      </div>
-      <p className="mb-1 font-medium">{title}</p>
-      <p className="text-sm">{subtitle}</p>
+    <div key={imgNumber} className="flex-1 flex flex-col items-center m-12">
+      <div className="">{renderImage()}</div>
+      <p className="font-medium text-blacked text-xl">{title}</p>
+      <p className="">{subtitle}</p>
     </div>
   );
 };

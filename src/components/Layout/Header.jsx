@@ -1,18 +1,32 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-
-const Header = () => {
+import { Link } from "gatsby";
+import { DownloadBlue } from "../Buttons";
+import LogoSVG from "../../assets/logo.svg";
+import StarSVG from "../../assets/yellow_star_small.svg";
+const Menu = () => {
   return (
-    <div className="bg-gray-light p-2">
-      <StaticImage
-        src="../../images/icon.png"
-        placeholder="blurred"
-        layout="fixed"
-        width={30}
-        height={30}
-      />
-    </div>
+    <>
+      <nav className="relative flex  items-center justify-between px-2 py-3 ">
+        <Link
+          className="text-xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap  "
+          href="/"
+        >
+          <LogoSVG />
+        </Link>
+        <div className=" flex flex-row">
+          <Link
+            to="/employers"
+            className="px-3 py-2 flex items-center text-xs font-bold leading-snug  text-blacked hover:text-hover-blue hover:underline z-10"
+          >
+            For Employers
+          </Link>
+          <DownloadBlue className="hidden md:inline-block" />
+          <div className="absolute md:hidden top-3 right-0 z-0">
+            <StarSVG className="" />
+          </div>
+        </div>
+      </nav>
+    </>
   );
 };
-
-export default Header;
+export default Menu;
