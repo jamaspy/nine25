@@ -1,5 +1,4 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
 import PrivacySVG from "../../assets/img_privacy.svg";
 import InnovationSVG from "../../assets/img_innovation.svg";
 import SecuritySVG from "../../assets/img_security.svg";

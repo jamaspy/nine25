@@ -1,15 +1,14 @@
 import React from "react";
-import ITunesSVG from "../../assets/download_itunes.svg";
-const Download_IOS = ({ className }) => {
+import PlaySVG from "../../assets/download_play.svg";
+const DownloadAndroid = ({ className }) => {
   return (
     <div
-      role="button"
-      aria-label="dowloand app on iOS"
+      aria-label="Download app on Play store"
       className={`bg-blacked text-white border rounded-full px-14 py-4 flex items-center justify-center hover:cursor-pointer ${className} m-auto`}
     >
-      <ITunesSVG />
+      <PlaySVG />
     </div>
   );
 };
 
-export default Download_IOS;
+export default DownloadAndroid;

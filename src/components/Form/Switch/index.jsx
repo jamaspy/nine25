@@ -35,19 +35,23 @@ const Switch = () => {
     "
         />
         <label
-          for="toggle"
+          htmlFor="toggle"
           className="
       toggle-label
       block
       overflow-hidden
       h-6
       rounded-full
-      bg-gray-300
+      bg-gray-light
       cursor-pointer
+      text-secondary
+      text-xs
     "
-        ></label>
+        >
+          .
+        </label>
       </div>
-      <label for="toggle" class="text-xs text-blacked">
+      <label htmlFor="toggle" class="text-xs text-blacked">
         I want to get updates & offers
       </label>
     </>

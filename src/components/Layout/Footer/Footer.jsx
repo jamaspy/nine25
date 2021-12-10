@@ -3,18 +3,18 @@ import Links from "./Links";
 import Socials from "./Socials";
 import Disclaimer from "./Disclaimer";
 import LogoCopyright from "./LogoCopyright";
-import { Download_Android, Download_IOS } from "../../Buttons";
+import { DownloadAndroid, DownloadIOS } from "../../Buttons";
 const Footer = ({ device }) => {
   return (
     <div className="bg-blacked text-white p-8">
       <p className="text-xl text-center font-semibold">Start Streaming Now</p>
       <div className="my-8">
-        {device() === "ios" && <Download_IOS />}
-        {device() === "android" && <Download_Android />}
+        {device() === "ios" && <DownloadIOS />}
+        {device() === "android" && <DownloadAndroid />}
         {device() === "desktop" && (
           <>
-            <Download_IOS className="mr-8" />
-            <Download_Android />
+            <DownloadIOS className="mr-8" />
+            <DownloadAndroid />
           </>
         )}
       </div>

@@ -4,7 +4,7 @@ import { HomeBenefits } from "../components/Benefits";
 import { Layout } from "../components/Layout";
 import Hero from "../components/Hero";
 import Cta from "../components/CTA";
-import SEO from "../components/SEO";
+import Seo from "../components/SEO";
 import { get } from "lodash";
 const IndexPage = () => {
   const navigator = get(window, ["navigator", "userAgent"], [])
@@ -26,7 +26,7 @@ const IndexPage = () => {
 
   return (
     <Layout device={checkDevice}>
-      <SEO title="Home" />
+      <Seo title="Home" />
       <Hero device={checkDevice} />
       <HomeBenefits />
       <HomeFeatures />

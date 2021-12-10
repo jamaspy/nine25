@@ -1,5 +1,5 @@
-import Download_Android from "./Download_Android";
-import Download_Blue from "./Download_Blue";
-import Download_IOS from "./Download_IOS";
+import DownloadAndroid from "./DownloadAndroid";
+import DownloadBlue from "./DownloadBlue";
+import DownloadIOS from "./DownloadIOS";
 import SendButton from "./Send";
-export { Download_Android, Download_Blue, Download_IOS, SendButton };
+export { DownloadAndroid, DownloadBlue, DownloadIOS, SendButton };

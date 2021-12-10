@@ -1,6 +1,6 @@
 import React from "react";
 import { radialFill } from "../../styles/textGradientStyleObjects";
-import { Download_Android, Download_IOS } from "../Buttons";
+import { DownloadAndroid, DownloadIOS } from "../Buttons";
 import HeroSVG from "../../assets/hero.svg";
 import StarSVG from "../../assets/yellow_star.svg";
 const index = ({ device }) => {
@@ -20,12 +20,12 @@ const index = ({ device }) => {
             manage & invest your salary.
           </p>
           <div className="flex flex-row w-full justify-center md:justify-start mt-12">
-            {device() === "ios" && <Download_IOS />}
-            {device() === "android" && <Download_Android />}
+            {device() === "ios" && <DownloadIOS />}
+            {device() === "android" && <DownloadAndroid />}
             {device() === "desktop" && (
               <>
-                <Download_IOS className="mr-8" />
-                <Download_Android />
+                <DownloadIOS className="mr-8" />
+                <DownloadAndroid />
               </>
             )}
           </div>

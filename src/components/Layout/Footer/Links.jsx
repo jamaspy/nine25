@@ -7,12 +7,9 @@ const Links = () => {
   const [showCompany, setShowCompany] = useState(false);
   const [showLegal, setShowLegal] = useState(false);
   const [showLearn, setShowLearn] = useState(false);
-  const {
-    company_footer_links,
-    discovery_footer_links,
-    learn_footer_links,
-    legal_footer_links,
-  } = links;
+
+  const { company_footer_links, learn_footer_links, legal_footer_links } =
+    links;
 
   return (
     <>
@@ -38,6 +35,9 @@ const Links = () => {
       </div>
       <div className="w-full flex flex-col justify-around items-start md:hidden">
         <div
+          role="button"
+          tabIndex={0}
+          onKeyDown={() => setShowCompany(!showCompany)}
           onClick={() => setShowCompany(!showCompany)}
           className={`flex flex-row w-full justify-between items-center ${
             showCompany ? "" : "border-b border-gray-dark mb-4"
@@ -62,7 +62,10 @@ const Links = () => {
           </Link>
         </div>
         <div
+          role="button"
+          tabIndex={-1}
           onClick={() => setShowLearn(!showLearn)}
+          onKeyDown={() => setShowLearn(!showLearn)}
           className={`flex flex-row w-full justify-between items-center ${
             showLearn ? "" : "border-b border-gray-dark mb-4"
           }`}
@@ -83,6 +86,9 @@ const Links = () => {
           </Link>
         </div>
         <div
+          role="button"
+          tabIndex={-2}
+          onKeyDown={() => setShowLegal(!showLegal)}
           onClick={() => setShowLegal(!showLegal)}
           className={`flex flex-row w-full justify-between items-center ${
             showLegal ? "" : "border-b border-gray-dark"
