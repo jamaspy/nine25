@@ -1,24 +1,15 @@
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="nine25" src="./public/icons/icon-512x512.png" width="200" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby minimal starter
+  nine25 Website
 </h1>
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
+1.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -27,28 +18,48 @@
     npm run develop
     ```
 
-3.  **Open the code and start customizing!**
+2.  **Build**
 
-    Your site is now running at http://localhost:8000!
+    Navigate into your new site’s directory and create local build
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    ```shell
+    cd my-gatsby-site/
+    npm run build
+    ```
 
-4.  **Learn more**
+3.  **Serve Locally**
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    Navigate into your new site’s directory and serve latest build
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    ```shell
+    cd my-gatsby-site/
+    npm run serve
+    ```
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+4.  **Clean**
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    Navigate into your new site’s directory and clean cache.
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+    ```shell
+    cd my-gatsby-site/
+    npm run clean
+    ```
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## 📚 Documentation
 
-## 🚀 Quick start (Gatsby Cloud)
+- [Gatsby Documentation](https://www.gatsbyjs.org/docs/)
+- [Gatsby Tutorial](https://www.gatsbyjs.org/tutorial/)
+- [Gatsby API Reference](https://www.gatsbyjs.org/docs/api-reference/)
+- [Gatsby CLI](https://www.gatsbyjs.org/docs/gatsby-cli/)
+- [Gatsby Starter Documentation](https://www.gatsbyjs.org/docs/creating-a-static-site/)
+- [TailwindCSS Documentation (currently running v3)](https://tailwindcss.com/docs/)
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+Breakpoints:
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+```shell
+sm	640px	@media (min-width: 640px) { ... }
+md	768px	@media (min-width: 768px) { ... }
+lg	1024px	@media (min-width: 1024px) { ... }
+xl	1280px	@media (min-width: 1280px) { ... }
+2xl	1536px	@media (min-width: 1536px) { ... }
+```
