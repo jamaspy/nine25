@@ -3,9 +3,11 @@ import { radialFill } from "../../styles/textGradientStyleObjects";
 import { DownloadAndroid, DownloadIOS } from "../Buttons";
 import HeroSVG from "../../assets/hero.svg";
 import StarSVG from "../../assets/yellow_star.svg";
+import DownloadModal from "../DownloadModal";
 const index = ({ device }) => {
   return (
     <div className="flex flex-col flex-shrink mt-12 md:flex-row md:justify-center relative overflow-hidden">
+      <DownloadModal />
       <div className="md:pl-4">
         <div className="flex flex-col items-center justify-center xl:justify-start lg:items-start lg:mt-24 lg:ml-24">
           <p className="text-4xl md:text-5xl font-black">Now Streaming:</p>

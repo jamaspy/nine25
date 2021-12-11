@@ -1,0 +1,10 @@
+.main_modal {
+  background-image: url("../../images/modal_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
