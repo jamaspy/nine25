@@ -25,12 +25,11 @@ const renderIcon = (platform) => {
   }
 };
 
-const Socials = () => {
-  console.log(socialPlatofrms);
+const Socials = ({ classes }) => {
   return (
-    <div className="w-full flex items-center justify-center  mt-8 mb-4">
+    <div className="w-full flex lg:flex-col items-center justify-center lg:mt-2 mt-8 mb-4">
       {socialPlatofrms.map((platform) => (
-        <div className="w-8 h-8 cursor-pointer bg-gray-dark rounded-full flex items-center justify-center mx-2">
+        <div className="w-8 h-8 cursor-pointer bg-gray-dark rounded-full flex items-center justify-center mx-2 lg:my-2">
           {renderIcon(platform)}
         </div>
       ))}

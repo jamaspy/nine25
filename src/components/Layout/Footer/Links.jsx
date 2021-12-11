@@ -3,6 +3,7 @@ import * as links from "../data";
 import FooterLink from "./FooterLink";
 import { Link } from "gatsby";
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
+import Socials from "./Socials";
 const Links = () => {
   const [showCompany, setShowCompany] = useState(false);
   const [showLegal, setShowLegal] = useState(false);
@@ -13,7 +14,7 @@ const Links = () => {
 
   return (
     <>
-      <div className="w-full md:flex flex-row justify-around items-start hidden">
+      <div className="w-full lg:flex flex-row justify-around items-start hidden">
         <div className="flex flex-col">
           <p className="font-semibold text-sm mb-1">Company</p>
           {company_footer_links.map((link, index) => (
@@ -32,15 +33,21 @@ const Links = () => {
             <FooterLink label={link.label} to={link.to} key={index} />
           ))}
         </div>
+        <div className="hidden lg:inline-block">
+          <p className="font-semibold text-sm mb-1">Social</p>
+          <Socials />
+        </div>
       </div>
-      <div className="w-full flex flex-col justify-around items-start md:hidden">
+      <div className="w-full flex flex-col justify-around items-start lg:hidden">
         <div
           role="button"
           tabIndex={0}
           onKeyDown={() => setShowCompany(!showCompany)}
           onClick={() => setShowCompany(!showCompany)}
           className={`flex flex-row w-full justify-between items-center ${
-            showCompany ? "" : "border-b border-gray-dark mb-4"
+            showCompany
+              ? ""
+              : "border-b border-gray-dark mb-4 focus:outline-none"
           }`}
         >
           <p className="font-semibold text-sm mb-3">Company</p>
@@ -67,7 +74,7 @@ const Links = () => {
           onClick={() => setShowLearn(!showLearn)}
           onKeyDown={() => setShowLearn(!showLearn)}
           className={`flex flex-row w-full justify-between items-center ${
-            showLearn ? "" : "border-b border-gray-dark mb-4"
+            showLearn ? "" : "border-b border-gray-dark mb-4 focus:outline-none"
           }`}
         >
           <p className="font-semibold text-sm mb-3">Learn</p>
@@ -91,7 +98,7 @@ const Links = () => {
           onKeyDown={() => setShowLegal(!showLegal)}
           onClick={() => setShowLegal(!showLegal)}
           className={`flex flex-row w-full justify-between items-center ${
-            showLegal ? "" : "border-b border-gray-dark"
+            showLegal ? "" : "border-b border-gray-dark focus:outline-none"
           }`}
         >
           <p className="font-semibold text-sm mb-3">Legal</p>
@@ -105,10 +112,10 @@ const Links = () => {
               : "hidden"
           }`}
         >
-          <Link to="/aboutus">
+          <Link to="/privacy">
             <p className="text-xs my-2">Privacy</p>
           </Link>
-          <Link to="/contactus">
+          <Link to="/terms">
             <p className="text-xs my-2 mb-4">Terms</p>
           </Link>
         </div>

@@ -4,9 +4,11 @@ import FooterLogo from "../../../assets/logo_white_large.svg";
 const LogoCopyright = () => {
   return (
     <div className="flex flew-row justify-between items-center ">
-      <FooterLogo className="z-10 hidden md:inline-block" />
+      <FooterLogo className="z-10 hidden lg:inline-block" />
       <FooterLogoSmall className="z-10 md:hidden inline-block" />
-      <p className="text-gray-dark text-xs">© 2021 Nine25 App</p>
+      <p className="text-gray-dark text-xs md:text-center text-right w-full">
+        © 2021 Nine25 App
+      </p>
     </div>
   );
 };

@@ -51,7 +51,10 @@ const Switch = () => {
           .
         </label>
       </div>
-      <label htmlFor="toggle" class="text-xs text-blacked">
+      <label
+        htmlFor="toggle"
+        class="text-xs text-blacked block mt-2 md:inline md:mt-0"
+      >
         I want to get updates & offers
       </label>
     </>
