@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { DownloadBlue } from "../Buttons";
 import LogoSVG from "../../assets/logo.svg";
 import StarSVG from "../../assets/yellow_star_small.svg";
+
 const Menu = () => {
   return (
     <>

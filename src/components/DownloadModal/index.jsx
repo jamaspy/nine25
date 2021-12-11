@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import * as styles from "./styles.module.css";
+import React, { useContext } from "react";
+
 import AppleQR from "../../assets/apple_QR.svg";
 import AppleLogo from "../../images/AppStore.png";
 import AndroidQR from "../../assets/android_QR.svg";
@@ -7,9 +7,10 @@ import AndroidLogo from "../../images/GooglePlay.png";
 import { CgClose } from "react-icons/cg";
 import ModalBg from "../../assets/modal_bg.svg";
 import { FiLink } from "react-icons/fi";
-const DownloadModal = ({ zIndex, blurLevel, show }) => {
-  const [showModal, setShowModal] = useState(show);
-  if (!showModal) return null;
+import { ModalContext } from "../../context";
+const DownloadModal = ({ zIndex, blurLevel }) => {
+  const { state, dispatch } = useContext(ModalContext);
+  if (!state.showModal) return null;
   return (
     <div
       className={`fixed flex justify-center items-center m-0 p-0 w-full z-${
@@ -29,8 +30,8 @@ const DownloadModal = ({ zIndex, blurLevel, show }) => {
           <CgClose
             role="button"
             aria-label="Close"
-            onClick={() => setShowModal(false)}
-            onKeyDown={() => setShowModal(false)}
+            onClick={() => dispatch({ type: "HIDE_MODAL" })}
+            onKeyDown={() => dispatch({ type: "HIDE_MODAL" })}
             tabIndex={0}
             className="hover:text-secondary hover:cursor-pointer"
           />
