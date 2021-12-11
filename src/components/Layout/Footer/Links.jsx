@@ -40,7 +40,9 @@ const Links = () => {
           onKeyDown={() => setShowCompany(!showCompany)}
           onClick={() => setShowCompany(!showCompany)}
           className={`flex flex-row w-full justify-between items-center ${
-            showCompany ? "" : "border-b border-gray-dark mb-4"
+            showCompany
+              ? ""
+              : "border-b border-gray-dark mb-4 focus:outline-none"
           }`}
         >
           <p className="font-semibold text-sm mb-3">Company</p>
@@ -67,7 +69,7 @@ const Links = () => {
           onClick={() => setShowLearn(!showLearn)}
           onKeyDown={() => setShowLearn(!showLearn)}
           className={`flex flex-row w-full justify-between items-center ${
-            showLearn ? "" : "border-b border-gray-dark mb-4"
+            showLearn ? "" : "border-b border-gray-dark mb-4 focus:outline-none"
           }`}
         >
           <p className="font-semibold text-sm mb-3">Learn</p>
@@ -91,7 +93,7 @@ const Links = () => {
           onKeyDown={() => setShowLegal(!showLegal)}
           onClick={() => setShowLegal(!showLegal)}
           className={`flex flex-row w-full justify-between items-center ${
-            showLegal ? "" : "border-b border-gray-dark"
+            showLegal ? "" : "border-b border-gray-dark focus:outline-none"
           }`}
         >
           <p className="font-semibold text-sm mb-3">Legal</p>
@@ -105,10 +107,10 @@ const Links = () => {
               : "hidden"
           }`}
         >
-          <Link to="/aboutus">
+          <Link to="/privacy">
             <p className="text-xs my-2">Privacy</p>
           </Link>
-          <Link to="/contactus">
+          <Link to="/terms">
             <p className="text-xs my-2 mb-4">Terms</p>
           </Link>
         </div>
