@@ -3,6 +3,7 @@ import * as links from "../data";
 import FooterLink from "./FooterLink";
 import { Link } from "gatsby";
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
+import Socials from "./Socials";
 const Links = () => {
   const [showCompany, setShowCompany] = useState(false);
   const [showLegal, setShowLegal] = useState(false);
@@ -13,7 +14,7 @@ const Links = () => {
 
   return (
     <>
-      <div className="w-full md:flex flex-row justify-around items-start hidden">
+      <div className="w-full lg:flex flex-row justify-around items-start hidden">
         <div className="flex flex-col">
           <p className="font-semibold text-sm mb-1">Company</p>
           {company_footer_links.map((link, index) => (
@@ -32,8 +33,12 @@ const Links = () => {
             <FooterLink label={link.label} to={link.to} key={index} />
           ))}
         </div>
+        <div className="hidden lg:inline-block">
+          <p className="font-semibold text-sm mb-1">Social</p>
+          <Socials />
+        </div>
       </div>
-      <div className="w-full flex flex-col justify-around items-start md:hidden">
+      <div className="w-full flex flex-col justify-around items-start lg:hidden">
         <div
           role="button"
           tabIndex={0}
