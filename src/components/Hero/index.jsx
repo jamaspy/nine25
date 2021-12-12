@@ -4,6 +4,7 @@ import { DownloadAndroid, DownloadIOS } from "../Buttons";
 import HeroSVG from "../../assets/hero.svg";
 import StarSVG from "../../assets/yellow_star.svg";
 import DownloadModal from "../DownloadModal";
+import Typical from "./Typing";
 const index = ({ device }) => {
   return (
     <div className="flex flex-col flex-shrink mt-12 md:flex-row md:justify-center relative overflow-hidden">
@@ -17,10 +18,17 @@ const index = ({ device }) => {
           >
             Your salary
           </p>
-          <p className="mt-4 text-xl text-center md:text-left px-4 md:p-0">
-            The <span className="bg-primary">smartest</span> way to spend,
-            manage & invest your salary.
-          </p>
+          <div className="flex flex-row items-center justify-center mt-4 text-xl text-center md:text-left px-4 md:p-0">
+            <p>The</p>
+            <span className="bg-primary mx-2 px-1">
+              <Typical
+                steps={["smartest", 1000, "easiest", 1000, "quickest", 1000]}
+                loop={Infinity}
+                wrapper="p"
+              />
+            </span>
+            <p className="">way to spend, manage & invest your salary.</p>
+          </div>
           <div className="flex flex-row w-full justify-center md:justify-start mt-12">
             {device() === "ios" && <DownloadIOS />}
             {device() === "android" && <DownloadAndroid />}
