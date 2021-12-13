@@ -23,6 +23,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@camwiegert/typical": "^0.1.1",
     "@fontsource/inter": "^4.5.0",
     "gatsby": "^4.0.0",
     "gatsby-plugin-image": "^2.0.0",

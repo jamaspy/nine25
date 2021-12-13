@@ -36,7 +36,7 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
             className="hover:text-secondary hover:cursor-pointer"
           />
         </div>
-        <div className="z-50 flex items-center flex-col justify-center h-full hover:bg-red-500">
+        <div className="z-50 flex items-center flex-col justify-center h-full ">
           <p className="text-2xl font-semibold text-center z-30 mb-8">
             Scan to download Nine25 app
           </p>
