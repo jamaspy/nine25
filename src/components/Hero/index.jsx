@@ -22,7 +22,7 @@ const index = ({ device }) => {
             <p>The</p>
             <span className="bg-primary mx-2 px-1">
               <Typical
-                steps={["smartest", 1000, "easiest", 1000, "quickest", 1000]}
+                steps={["smartest", 2000, "easiest", 2000, "quickest", 2000]}
                 loop={Infinity}
                 wrapper="p"
               />
