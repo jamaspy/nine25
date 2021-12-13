@@ -1,5 +1,6 @@
 import React from "react";
 import { Layout } from "../components/Layout";
+import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 import Responsible from "../assets/img_responsible.svg";
 import DHead from "../assets/img_dhead.svg";
@@ -9,6 +10,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
+      <Seo title="About Us" />
       <div className="container mx-auto">
         <p className="text-2xl font-semibold">Our Story</p>
         <p>

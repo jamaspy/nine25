@@ -1,5 +1,6 @@
 import React from "react";
 import { Layout } from "../components/Layout";
+import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 import ModalBg from "../assets/employers_modal_bg.svg";
 import Attract from "../assets/img_attract.svg";
@@ -11,6 +12,7 @@ import Analytics from "../assets/img_analytics.svg";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
+      <Seo title="Employers" />
       <div className=" flex flex-col items-center justify-center bg-gray-lighter">
         <div className="w-full h-full">
           <ModalBg className="mt-12 mx-auto" />
