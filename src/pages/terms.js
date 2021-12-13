@@ -1,10 +1,12 @@
 import React from "react";
 import { Layout } from "../components/Layout";
 import ContactForm from "../components/Form";
+import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
+      <Seo title="Terms of Service" />
       <div className="container m-auto px-8 md:px-36">
         <p className="text-2xl font-semibold">Terms of service</p>
 

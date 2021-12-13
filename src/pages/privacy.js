@@ -1,10 +1,12 @@
 import React from "react";
 import { Layout } from "../components/Layout";
 import ContactForm from "../components/Form";
+import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
+      <Seo title="Privacy Policy" />
       <div className="container m-auto px-8 md:px-36">
         <p className="text-2xl font-semibold">Privacy Policy</p>
         <p className="text-xs mb-4">Last updated: March 5, 2021</p>
