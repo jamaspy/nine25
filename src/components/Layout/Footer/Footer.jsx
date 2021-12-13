@@ -8,7 +8,7 @@ import FooterLogoLarge from "../../../assets/logo_white_large.svg";
 const Footer = ({ device }) => {
   return (
     <div className="bg-blacked text-white p-8">
-      <div className="flex flex-row w-full md:justify-between justify-center lg:hidden items-start bg-red-500">
+      <div className="flex flex-row w-full md:justify-between justify-center lg:hidden items-start">
         <div className="hidden md:flex lg:hidden">
           <FooterLogoLarge className="z-10 lg:hidden inline-block" />
         </div>
