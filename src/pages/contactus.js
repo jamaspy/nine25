@@ -6,7 +6,7 @@ import AnswerList from "../components/FAQ/AnswerList";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
-      <div className="container mx-auto">
+      <div className="w-3/4 lg:w-1/2 mx-auto">
         <ContactForm heading="Please, tell us what’s on your mind" />
       </div>
       <div className="container mx-auto mt-12">

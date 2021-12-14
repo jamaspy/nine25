@@ -3,7 +3,7 @@ import { Layout } from "../components/Layout";
 import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 import Responsible from "../assets/img_response.svg";
-import DHead from "../assets/img_diHead.svg";
+import DHead from "../assets/img_duckHead.svg";
 import Positive from "../assets/img_positive.svg";
 import Simple from "../assets/img_simple.svg";
 import { StaticImage } from "gatsby-plugin-image";
@@ -11,9 +11,11 @@ const aboutus = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="About Us" />
-      <div className="container mx-auto px-4">
-        <p className="text-2xl font-semibold">Our Story</p>
-        <p>
+      <div className="lg:w-1/3 w-3/4 mx-auto px-4">
+        <p className="lg:text-4xl md:text-3xl text-2xl font-semibold mb-4">
+          Our Story
+        </p>
+        <p className="text-lg">
           Nine25 (pronounced nine-to-five) wants to bring the way we get paid to
           the digital era.The concept of a paycheque is alien to anyone who's
           under 30 years. It's a relic from the pre-computerised age when an
@@ -23,7 +25,7 @@ const aboutus = () => {
           real-time salarystreaming service.
         </p>
         <div
-          className="mx-auto lg:w-1/2 rounded-lg shadow my-12 "
+          className="mx-auto  rounded-lg shadow my-12 "
           style={{
             background:
               "linear-gradient(144.21deg, #6C39FE 4.6%, #4100FB 70.53%)",
@@ -36,8 +38,10 @@ const aboutus = () => {
             quality={100}
           />
         </div>
-        <p className="text-2xl font-semibold">Our Mission</p>
-        <p className="mb-12">
+        <p className="lg:text-4xl md:text-3xl text-2xl font-semibold mb-4">
+          Our Mission
+        </p>
+        <p className="mb-12 text-lg">
           Technology is progressing at a rapid rate and our lifestyles are
           thriving because of it. The financial world, on the other hand, is
           lagging.n comparison to our fast paced, quick access way of living,
@@ -52,17 +56,22 @@ const aboutus = () => {
           enable it.
         </p>
       </div>
-      <div className=" bg-gray-lighter px-4">
+      <div className=" bg-gray-lighter px-4 pt-12">
+        <div className="container mx-auto">
+          <p className="lg:text-4xl md:text-3xl text-2xl font-semibold">
+            Our values
+          </p>
+        </div>
         <div className="container py-12 grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto">
           <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
-              <p className="text-2xl font-semibold">Be responsible</p>
-              <p>
+              <p className="text-2xl font-semibold mb-4">Be responsible</p>
+              <p className="mb-2 text-lg">
                 We dont believe in profiteering at all costs and we definitely
                 not about young adults being shoved toward a lifetime of debt
                 and repayments.
               </p>
-              <p>
+              <p className="mb-2 text-lg">
                 We believe in financial freedom is possible for every at all
                 costs and we definitely not about young adults being shoved
                 toward a lifetime of debt and repayments.
@@ -72,14 +81,16 @@ const aboutus = () => {
           </div>
           <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
-              <p className="text-2xl font-semibold">Drive positive outcomes</p>
-              <p>
+              <p className="text-2xl font-semibold mb-4">
+                Drive positive outcomes
+              </p>
+              <p className="mb-2 text-lg">
                 This is why we do what we do.At heart of every dicision freedom
                 is possible for every at all costs and we definitely not about
                 young adults being shoved toward a lifetime of debt and
                 repayments.
               </p>
-              <p>
+              <p className="mb-2 text-lg">
                 From the logic profiteering at all costs and we definitely not
                 about young adults being shoved toward a lifetime of debt and
                 repayments.
@@ -87,10 +98,10 @@ const aboutus = () => {
             </div>
             <Positive />
           </div>
-          <div className="border flex flex-col items-end justify-end rounded-3xl bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-end justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
-              <p className="text-2xl font-semibold">We keep it simple</p>
-              <p>
+              <p className="text-2xl font-semibold mb-4">We keep it simple</p>
+              <p className="mb-2 text-lg">
                 This is why we do what we do.At heart of every dicision freedom
                 is possible for every at all costs and we definitely not about
                 young adults being shoved toward a lifetime of debt and
@@ -99,16 +110,17 @@ const aboutus = () => {
             </div>
             <Simple />
           </div>
-          <div className="flex flex-col items-end justify-end rounded-3xl bg-white shadow relative">
+          <div className="flex flex-col justify-between rounded-3xl bg-white shadow">
             <div className="p-4">
-              <p className="text-2xl font-semibold">Don't be a d*ckhead</p>
-              <p>Just some advice on how to be a better human.</p>
-              <p>
+              <p className="text-2xl font-semibold mb-4">Don't be a d*ckhead</p>
+              <p className="mb-2 text-lg">
+                Just some advice on how to be a better human.
+              </p>
+              <p className="mb-2 text-lg">
                 The world already has enough of them - embrace individuality and
                 don’t be one.
               </p>
             </div>
-
             <DHead />
           </div>
         </div>

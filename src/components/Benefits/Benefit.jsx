@@ -25,8 +25,8 @@ const Benefit = ({ title, paragraphs, key, isWide, isComingSoon }) => {
       } bg-white overflow-hidden shadow-sm rounded-lg`}
     >
       <div
-        className={`container flex ${
-          isWide ? "flex-col md:flex-row" : "flex-col"
+        className={`flex ${
+          isWide ? "flex-col md:flex-row md:justify-between w-full" : "flex-col"
         }`}
       >
         {!isWide && (
@@ -34,19 +34,19 @@ const Benefit = ({ title, paragraphs, key, isWide, isComingSoon }) => {
             {renderImage()}
           </div>
         )}
-        <div className="flex-1 p-4">
-          <p className="text-xl font-medium">{title}</p>
+        <div className="flex-1 p-4 flex items-start justify-center flex-col">
+          <p className="text-xl font-medium mb-4">{title}</p>
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-base mb-2">
+            <p key={index} className="text-lg mb-2">
               {paragraph}
             </p>
           ))}
-          <p className="text-secondary hover:text-hover-blue hover:cursor-pointer flex flex-row items-center justify-start">
+          {/* <p className="text-secondary hover:text-hover-blue hover:cursor-pointer flex flex-row items-center justify-start">
             Read More <HiOutlineChevronRight className="ml-4" />
-          </p>
+          </p> */}
         </div>
         {isWide && (
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 flex items-end justify-center">
             {renderImage()}
           </div>
         )}

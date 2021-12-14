@@ -21,12 +21,12 @@ const Links = () => {
             <FooterLink label={link.label} to={link.to} key={index} />
           ))}
         </div>
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           <p className="font-semibold text-sm  mb-1">Learning</p>
           {learn_footer_links.map((link, index) => (
             <FooterLink label={link.label} to={link.to} key={index} />
           ))}
-        </div>
+        </div> */}
         <div className="flex flex-col ">
           <p className="font-semibold text-sm mb-1">Legal</p>
           {legal_footer_links.map((link, index) => (
@@ -68,7 +68,7 @@ const Links = () => {
             <p className="text-xs my-2 mb-4">Contact Us</p>
           </Link>
         </div>
-        <div
+        {/* <div
           role="button"
           tabIndex={-1}
           onClick={() => setShowLearn(!showLearn)}
@@ -91,7 +91,7 @@ const Links = () => {
           <Link to="/aboutus">
             <p className="text-xs my-2 mb-4">Blog</p>
           </Link>
-        </div>
+        </div> */}
         <div
           role="button"
           tabIndex={-2}
