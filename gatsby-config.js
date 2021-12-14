@@ -5,13 +5,45 @@ module.exports = {
     description: "The smartest way to spend, manage & invest your salary.",
     author: "nine25",
     keywords:
-      "nine25, nine25.com, nine25.com.au, nine25.com.au/blog, streaming, investment, innovation, finance, investor, EFT, crypto, salary, pay, payment, wages, stream salary",
+      "nine25, nine25.app, nine25.app.au, nine25.app/blog, streaming, investment, innovation, finance, investor, EFT, crypto, salary, pay, payment, wages, stream salary, responsible, positive, simple spend, manage, bank, save, app, download, smart, adaptable, revolutionary, dependable",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     `gatsby-plugin-postcss`,
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-PQHVP7S",
+
+        // Include GTM in development.
+        //
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "nine25_web" },
+
+        // Specify optional GTM environment details.
+        // gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
+        // gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
+        // dataLayerName: "YOUR_DATA_LAYER_NAME",
+
+        // Name of the event that is triggered
+        // on every Gatsby route change.
+        //
+        // Defaults to gatsby-route-change
+        routeChangeEventName: "nine25_web_route_change",
+        // Defaults to false
+        enableWebVitalsTracking: true,
+        // Defaults to https://www.googletagmanager.com
+        // selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
+      },
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
