@@ -3,7 +3,7 @@ import { Layout } from "../components/Layout";
 import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 import Responsible from "../assets/img_responsible.svg";
-import DHead from "../assets/img_dhead.svg";
+import DHead from "../assets/img_diHead.svg";
 import Positive from "../assets/img_positive.svg";
 import Simple from "../assets/img_simple.svg";
 import { StaticImage } from "gatsby-plugin-image";
@@ -11,7 +11,7 @@ const aboutus = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="About Us" />
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <p className="text-2xl font-semibold">Our Story</p>
         <p>
           Nine25 (pronounced nine-to-five) wants to bring the way we get paid to
@@ -37,7 +37,7 @@ const aboutus = () => {
           />
         </div>
         <p className="text-2xl font-semibold">Our Mission</p>
-        <p>
+        <p className="mb-12">
           Technology is progressing at a rapid rate and our lifestyles are
           thriving because of it. The financial world, on the other hand, is
           lagging.n comparison to our fast paced, quick access way of living,
@@ -52,9 +52,9 @@ const aboutus = () => {
           enable it.
         </p>
       </div>
-      <div className=" bg-gray-lighter ">
+      <div className=" bg-gray-lighter px-4">
         <div className="container py-12 grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto">
-          <div className="border flex flex-col items-center justify-center rounded-lg bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-center justify-center rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
               <p className="text-2xl font-semibold">Be responsible</p>
               <p>
@@ -70,7 +70,7 @@ const aboutus = () => {
             </div>
             <Responsible />
           </div>
-          <div className="border flex flex-col items-center justify-center rounded-lg bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-center justify-center rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
               <p className="text-2xl font-semibold">Drive positive outcomes</p>
               <p>
@@ -87,7 +87,7 @@ const aboutus = () => {
             </div>
             <Positive />
           </div>
-          <div className="border flex flex-col items-end justify-end rounded-lg bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-end justify-end rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
               <p className="text-2xl font-semibold">We keep it simple</p>
               <p>
@@ -99,7 +99,7 @@ const aboutus = () => {
             </div>
             <Simple />
           </div>
-          <div className="flex flex-col items-end justify-end rounded-lg bg-white shadow overflow-hidden">
+          <div className="flex flex-col items-end justify-end rounded-3xl bg-white shadow relative">
             <div className="p-4">
               <p className="text-2xl font-semibold">Don't be a d*ckhead</p>
               <p>Just some advice on how to be a better human.</p>
@@ -108,11 +108,12 @@ const aboutus = () => {
                 don’t be one.
               </p>
             </div>
+
             <DHead />
           </div>
         </div>
       </div>
-      <div className="container bg-white mx-auto py-12">
+      <div className="container bg-white mx-auto py-12 px-4">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           <div className="rounded-lg bg-primary shadow">Person</div>
           <div className="rounded-lg bg-secondary shadow">Person</div>

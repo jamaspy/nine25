@@ -3,7 +3,6 @@ import { HomeFeatures } from "../components/Features";
 import { HomeBenefits } from "../components/Benefits";
 import { Layout } from "../components/Layout";
 import Hero from "../components/Hero";
-import Cta from "../components/CTA";
 import Seo from "../components/SEO";
 import { checkDevice } from "../utils/checkDevice";
 
@@ -14,7 +13,6 @@ const IndexPage = () => {
       <Hero device={checkDevice} />
       <HomeBenefits />
       <HomeFeatures />
-      <Cta />
     </Layout>
   );
 };
