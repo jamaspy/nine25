@@ -17,7 +17,7 @@ const Footer = ({ device }) => {
             Start Streaming Now
           </p>
           <div className="my-8  w-full">
-            {device() === "ios" && <DownloadIOS />}
+            {device() === "ios" && <DownloadIOS location="footer" />}
             {device() === "android" && <DownloadAndroid />}
           </div>
         </div>
