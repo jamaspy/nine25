@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { DownloadBlue } from "../Buttons";
+import { SecondaryButton } from "../Buttons";
 import LogoSVG from "../../assets/logo.svg";
 import StarSVG from "../../assets/yellow_star_small.svg";
 
@@ -21,7 +21,10 @@ const Menu = () => {
           >
             For Employers
           </Link>
-          <DownloadBlue className="hidden md:inline-block" />
+          <SecondaryButton
+            className="hidden md:inline-block"
+            text="Download App"
+          />
           <div className="absolute md:hidden top-3 right-0 z-0">
             <StarSVG className="" />
           </div>
