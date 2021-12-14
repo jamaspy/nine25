@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "../components/Layout";
 import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
-import ModalBg from "../assets/employers_modal_bg.svg";
+import TopBox from "../components/Employers/TopBox";
 import Attract from "../assets/img_attract.svg";
 import Retain from "../assets/img_retain.svg";
 import Engage from "../assets/img_engage.svg";
@@ -15,19 +15,7 @@ const aboutus = () => {
       <Seo title="Employers" />
       <div className=" flex flex-col items-center justify-center bg-gray-lighter">
         <div className="container mb-12 h-full">
-          <div className="relative bg-red-500">
-            <ModalBg
-              style={{
-                position: "absolute",
-                left: "50%",
-                transform: "translateX(-50%)",
-                zIndex: "1",
-              }}
-            />
-            <p className="z-10">
-              Improving the financial health of your emloyees starts today
-            </p>
-          </div>
+          <TopBox />
         </div>
 
         <div className="container grid gap-8 grid-cols-1 md:grid-cols-2">
