@@ -1,5 +1,12 @@
 import DownloadAndroid from "./DownloadAndroid";
-import DownloadBlue from "./DownloadBlue";
 import DownloadIOS from "./DownloadIOS";
+import PrimaryButton from "./PrimaryButton";
+import SecondaryButton from "./SecondaryButton";
 import SendButton from "./Send";
-export { DownloadAndroid, DownloadBlue, DownloadIOS, SendButton };
+export {
+  DownloadAndroid,
+  SecondaryButton,
+  DownloadIOS,
+  PrimaryButton,
+  SendButton,
+};

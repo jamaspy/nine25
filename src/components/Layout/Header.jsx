@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { DownloadBlue } from "../Buttons";
+import { SecondaryButton } from "../Buttons";
 import LogoSVG from "../../assets/logo.svg";
 import StarSVG from "../../assets/yellow_star_small.svg";
 
@@ -12,7 +12,7 @@ const Menu = () => {
           className="text-xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap  "
           href="/"
         >
-          <LogoSVG />
+          <LogoSVG style={{ width: "50%" }} />
         </Link>
         <div className=" flex flex-row">
           <Link
@@ -21,7 +21,10 @@ const Menu = () => {
           >
             For Employers
           </Link>
-          <DownloadBlue className="hidden md:inline-block" />
+          <SecondaryButton
+            className="hidden md:inline-block"
+            text="Download App"
+          />
           <div className="absolute md:hidden top-3 right-0 z-0">
             <StarSVG className="" />
           </div>

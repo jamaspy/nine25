@@ -22,7 +22,14 @@ const index = ({ device }) => {
             <p>The</p>
             <span className="bg-primary mx-2 px-1">
               <Typical
-                steps={["smartest", 2000, "easiest", 2000, "quickest", 2000]}
+                steps={[
+                  "revolutionary",
+                  2000,
+                  "dependable",
+                  2000,
+                  "adaptable",
+                  2000,
+                ]}
                 loop={Infinity}
                 wrapper="p"
               />
@@ -30,7 +37,7 @@ const index = ({ device }) => {
             <p className="">way to spend, manage & invest your salary.</p>
           </div>
           <div className="flex flex-row w-full justify-center md:justify-start mt-12">
-            {device() === "ios" && <DownloadIOS />}
+            {device() === "ios" && <DownloadIOS location="body" />}
             {device() === "android" && <DownloadAndroid />}
             {device() === "desktop" && (
               <>

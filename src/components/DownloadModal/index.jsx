@@ -41,7 +41,21 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
             Scan to download Nine25 app
           </p>
           <div className="flex flex-row">
-            <div className="flex flex-col items-center justify-center">
+            <div
+              role="button"
+              tabIndex={-1}
+              onKeyDown={() =>
+                navigator.clipboard.writeText(
+                  "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
+                )
+              }
+              onClick={() =>
+                navigator.clipboard.writeText(
+                  "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
+                )
+              }
+              className="flex flex-col items-center justify-center"
+            >
               <img width={100} src={AppleLogo} alt="Android Logo" />
               <AppleQR />
               <div className="flex flex-row items-center justify-center text-secondary hover:bg-hover-blue hover:cursor-pointer">
@@ -52,7 +66,17 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
             <div className="flex flex-col items-center justify-center">
               <img width={100} src={AndroidLogo} alt="Android Logo" />
               <AndroidQR />
-              <div className="flex flex-row items-center justify-center text-secondary hover:bg-hover-blue hover:cursor-pointer">
+              <div
+                role="button"
+                tabIndex={-2}
+                onKeyDown={() =>
+                  navigator.clipboard.writeText("ANDROID LINK HERE")
+                }
+                onClick={() =>
+                  navigator.clipboard.writeText("ANDROID LINK HERE")
+                }
+                className="flex flex-row items-center justify-center text-secondary hover:bg-hover-blue hover:cursor-pointer"
+              >
                 <FiLink className="mr-2" />
                 <p>copy link</p>
               </div>
