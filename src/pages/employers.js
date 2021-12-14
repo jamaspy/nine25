@@ -9,6 +9,7 @@ import Engage from "../assets/img_engage.svg";
 import Health from "../assets/img_health.svg";
 import Debit from "../assets/img_debit.svg";
 import Analytics from "../assets/img_analytics.svg";
+import Form from "../components/Form";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
@@ -110,6 +111,9 @@ const aboutus = () => {
               Personalised analytics & reporting
             </p>
           </div>
+        </div>
+        <div className="container rounded-3xl bg-white shadow-sm p-12 my-12">
+          <Form heading="Please, tell us what’s on your mind" />
         </div>
       </div>
     </Layout>

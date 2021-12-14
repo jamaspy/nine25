@@ -125,11 +125,8 @@ const aboutus = () => {
         </p>
       </div>
       <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
-        <div className="container rounded-xl bg-white shadow-sm p-12">
-          <p className="text-2xl font-semibold text-center">
-            Still have questions? Please, contact us
-          </p>
-          <ContactForm />
+        <div className="container rounded-3xl bg-white shadow-sm p-12">
+          <ContactForm heading="Still have questions? Please, contact us" />
         </div>
       </div>
     </Layout>
