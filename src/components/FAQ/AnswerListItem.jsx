@@ -1,9 +1,12 @@
 import React from "react";
 import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
-const AnswerListItem = ({ setterFn, showState, question, answer }) => {
+const AnswerListItem = ({ setterFn, showState, question, answer, index }) => {
   return (
     <div className="border-b w-3/4 mx-auto mt-8">
       <div
+        role="button"
+        tabIndex={index - 100}
+        onKeyDown={() => setterFn(!showState)}
         onClick={() => setterFn(!showState)}
         className="flex flex-row justify-between items-center cursor-pointer"
       >

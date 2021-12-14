@@ -7,10 +7,9 @@ import Socials from "./Socials";
 const Links = () => {
   const [showCompany, setShowCompany] = useState(false);
   const [showLegal, setShowLegal] = useState(false);
-  const [showLearn, setShowLearn] = useState(false);
+  // const [showLearn, setShowLearn] = useState(false);
 
-  const { company_footer_links, learn_footer_links, legal_footer_links } =
-    links;
+  const { company_footer_links, legal_footer_links } = links;
 
   return (
     <>

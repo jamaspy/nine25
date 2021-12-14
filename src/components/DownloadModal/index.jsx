@@ -42,6 +42,13 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
           </p>
           <div className="flex flex-row">
             <div
+              role="button"
+              tabIndex={-1}
+              onKeyDown={() =>
+                navigator.clipboard.writeText(
+                  "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
+                )
+              }
               onClick={() =>
                 navigator.clipboard.writeText(
                   "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
@@ -60,6 +67,11 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
               <img width={100} src={AndroidLogo} alt="Android Logo" />
               <AndroidQR />
               <div
+                role="button"
+                tabIndex={-2}
+                onKeyDown={() =>
+                  navigator.clipboard.writeText("ANDROID LINK HERE")
+                }
                 onClick={() =>
                   navigator.clipboard.writeText("ANDROID LINK HERE")
                 }

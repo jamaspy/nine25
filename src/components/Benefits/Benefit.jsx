@@ -1,5 +1,4 @@
 import React from "react";
-import { HiOutlineChevronRight } from "react-icons/hi";
 import SpendSVG from "../../assets/img_spend.svg";
 import ManageSVG from "../../assets/img_manage.svg";
 import InvestSVG from "../../assets/img_invest.svg";

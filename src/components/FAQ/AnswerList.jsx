@@ -1,12 +1,11 @@
 import React from "react";
-import { HiOutlineChevronDown, HiOutlineChevronUp } from "react-icons/hi";
+
 import AnswerListItem from "./AnswerListItem";
 const AnswerList = () => {
   const [showQuestion1, setShowQuestion1] = React.useState(false);
   const [showQuestion2, setShowQuestion2] = React.useState(false);
   const [showQuestion3, setShowQuestion3] = React.useState(false);
-  const [showQuestion4, setShowQuestion4] = React.useState(false);
-  const [showQuestion5, setShowQuestion5] = React.useState(false);
+
   const FAQList = [
     {
       question: "Velit ullamco anim nulla cillum reprehenderit nostrud aute.",
@@ -33,7 +32,7 @@ const AnswerList = () => {
   ];
   const CreateList = () => {
     const List = FAQList.map((item, index) => (
-      <AnswerListItem key={index} {...item} />
+      <AnswerListItem key={index} {...item} index={index} />
     ));
     return List;
   };
