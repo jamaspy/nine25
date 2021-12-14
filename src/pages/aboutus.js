@@ -2,7 +2,7 @@ import React from "react";
 import { Layout } from "../components/Layout";
 import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
-import Responsible from "../assets/img_responsible.svg";
+import Responsible from "../assets/img_response.svg";
 import DHead from "../assets/img_diHead.svg";
 import Positive from "../assets/img_positive.svg";
 import Simple from "../assets/img_simple.svg";
@@ -54,7 +54,7 @@ const aboutus = () => {
       </div>
       <div className=" bg-gray-lighter px-4">
         <div className="container py-12 grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto">
-          <div className="border flex flex-col items-center justify-center rounded-3xl bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
               <p className="text-2xl font-semibold">Be responsible</p>
               <p>
@@ -70,7 +70,7 @@ const aboutus = () => {
             </div>
             <Responsible />
           </div>
-          <div className="border flex flex-col items-center justify-center rounded-3xl bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
               <p className="text-2xl font-semibold">Drive positive outcomes</p>
               <p>
