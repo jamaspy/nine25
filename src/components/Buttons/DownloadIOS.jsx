@@ -10,7 +10,8 @@ const DownloadIOS = ({ className, location }) => {
             `https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-${location}&mt=8`
           );
       }}
-      className={`bg-blacked text-white border rounded-full px-14 py-4 flex items-center justify-center hover:cursor-pointer ${className} mx-auto`}
+      style={{ minWidth: "286px", minHeight: "85px" }}
+      className={`bg-blacked text-white border rounded-full  flex items-center justify-center hover:cursor-pointer ${className} mx-auto`}
     >
       <ITunesSVG />
     </button>

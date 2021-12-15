@@ -17,7 +17,7 @@ const TopBox = () => {
         Improving the financial health of your emloyees starts today
       </p>
       <div
-        className="flex flex-col md:flex-row justify-center items-center mt-8 w-full"
+        className="flex flex-col md:flex-row justify-center items-center lg:mt-20 w-full"
         style={{
           position: "absolute",
           top: "40%",

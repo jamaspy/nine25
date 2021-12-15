@@ -18,7 +18,12 @@ const aboutus = () => {
         <div className="container mb-12 h-full">
           <TopBox />
         </div>
-
+        <div className="container">
+          <p className="lg:text-5xl md:text-2xl text-xl font-semibold text-center my-8 lg:px-8">
+            Why incorporate Nine25’s salary streaming technology into your
+            business?
+          </p>
+        </div>
         <div className="container grid gap-8 grid-cols-1 md:grid-cols-2">
           <div className="rounded-2xl shadow bg-white flex flex-col items-center justify-center p-4">
             <Attract />
