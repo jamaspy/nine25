@@ -126,7 +126,7 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="container bg-white mx-auto py-12 px-4">
+      <div className="container bg-white mx-auto py-12 px-4 lg:px-0">
         <MeetTeam />
       </div>
     </Layout>
