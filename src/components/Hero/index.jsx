@@ -18,9 +18,9 @@ const index = ({ device }) => {
           >
             Your salary
           </p>
-          <div className="flex flex-row items-center justify-center mt-4 text-xl text-center md:text-left px-4 md:p-0">
-            <p>The</p>
-            <span className="bg-primary mx-2 px-1">
+          <div className="flex flex-row flex-wrap items-center justify-center mt-4 text-xl text-center md:text-left px-4 md:p-0">
+            <p>The</p>{" "}
+            <span className="bg-primary px-1">
               <Typical
                 steps={[
                   "revolutionary",

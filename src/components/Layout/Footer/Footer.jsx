@@ -3,7 +3,7 @@ import Links from "./Links";
 import Socials from "./Socials";
 import Disclaimer from "./Disclaimer";
 import LogoCopyright from "./LogoCopyright";
-import { DownloadAndroid, DownloadIOS } from "../../Buttons";
+import { DownloadAndroid, DownloadIOS, WhiteButton } from "../../Buttons";
 import FooterLogoLarge from "../../../assets/logo_white_large.svg";
 const Footer = ({ device }) => {
   return (
@@ -34,7 +34,12 @@ const Footer = ({ device }) => {
               <div className="my-8">
                 {device() === "ios" && <DownloadIOS />}
                 {device() === "android" && <DownloadAndroid />}
-                {device() === "desktop" && <>Download App Modal Button Here</>}
+                {device() === "desktop" && (
+                  <WhiteButton
+                    // className="hidden md:inline-block"
+                    text="Download App"
+                  />
+                )}
               </div>
             </div>
           </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { SecondaryButton } from "../Buttons";
+import { DownloadBlueButton } from "../Buttons";
 import LogoSVG from "../../assets/logo.svg";
 import StarSVG from "../../assets/yellow_star_small.svg";
 
@@ -21,7 +21,7 @@ const Menu = () => {
           >
             For Employers
           </Link>
-          <SecondaryButton
+          <DownloadBlueButton
             className="hidden md:inline-block"
             text="Download App"
           />

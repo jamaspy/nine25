@@ -35,6 +35,8 @@ const AboutUs = () => {
           <StaticImage
             src="../images/aboutus_blue.png"
             alt="about us"
+            layout="constrained"
+            width={845}
             placeholder="blurred"
             quality={100}
           />
