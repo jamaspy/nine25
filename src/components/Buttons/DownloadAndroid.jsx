@@ -5,7 +5,7 @@ const DownloadAndroid = ({ className }) => {
     <div
       aria-label="Download app on Play store"
       style={{ minWidth: "286px", minHeight: "85px" }}
-      className={`bg-blacked text-white border rounded-full flex items-center justify-center hover:cursor-pointer ${className} m-auto z-30`}
+      className={`bg-blacked text-white border rounded-full flex items-center justify-center hover:cursor-pointer ${className} m-auto z-10`}
     >
       <PlaySVG />
     </div>

@@ -15,7 +15,7 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
   if (!state.showModal) return null;
   return (
     <div
-      className={`fixed flex justify-center items-center m-0 p-0 w-full z-${
+      className={`fixed flex justify-center items-center z-40 m-0 p-0 w-full z-${
         zIndex ? zIndex : "10"
       } bg-white inset-0 rounded bg-opacity-50 min-h-screen h-full`}
       style={{
