@@ -7,7 +7,7 @@ const PrimaryButton = ({ className, text }) => {
       aria-label="Download App"
       onClick={() => dispatch({ type: "SHOW_MODAL" })}
       onKeyDown={() => dispatch({ type: "SHOW_MODAL" })}
-      className={`bg-primary hover:bg-primary-hover transition ease-in-out duration-200 text-white border rounded-full px-8 py-3 flex items-center justify-center cursor-pointer ${className}`}
+      className={`bg-primary hover:bg-primary-hover transition ease-in-out duration-200 text-white rounded-full px-8 py-3 flex items-center justify-center cursor-pointer ${className}`}
     >
       <p className="text-white">{text}</p>
     </button>

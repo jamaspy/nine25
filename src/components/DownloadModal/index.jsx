@@ -66,7 +66,7 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
                 className={`transition ease-in-out duration-150 flex flex-row items-center justify-center ${
                   iosCopied
                     ? "text-success"
-                    : "text-secondary hover:text-hover-blue"
+                    : "text-secondary hover:text-hover-blue hover:underline"
                 } hover:cursor-pointer`}
               >
                 <FiLink className="mr-2" />
@@ -90,7 +90,7 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
                 className={`transition ease-in-out duration-150 flex flex-row items-center justify-center ${
                   androidCopied
                     ? "text-success"
-                    : "text-secondary hover:text-hover-blue"
+                    : "text-secondary hover:text-hover-blue hover:underline"
                 } hover:cursor-pointer`}
               >
                 <FiLink className="mr-2" />
