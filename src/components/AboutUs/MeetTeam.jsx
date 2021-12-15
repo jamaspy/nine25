@@ -129,7 +129,7 @@ const MeetTeam = () => {
                   image={node?.image?.childImageSharp?.gatsbyImageData}
                 />
               </div>
-              <div className="border h-full text-center text-lg md:text-2xl  pb-4">
+              <div className="h-full text-center text-lg md:text-2xl  pb-4">
                 <p className="font-semibold text-white">{node.name}</p>
                 <p className=" italic text-white">"{node.tag}"</p>
               </div>

@@ -7,7 +7,7 @@ const SecondaryButton = ({ className, text }) => {
       aria-label="Download App"
       onClick={() => dispatch({ type: "SHOW_MODAL" })}
       onKeyDown={() => dispatch({ type: "SHOW_MODAL" })}
-      className={`bg-secondary hover:bg-secondary-hover text-white border rounded-full px-8 py-3 flex items-center justify-center cursor-pointer ${className}`}
+      className={`bg-secondary hover:bg-secondary-hover transition ease-in-out duration-200 text-white border rounded-full px-8 py-3 flex items-center justify-center cursor-pointer ${className}`}
     >
       <p className="text-tertiary">{text}</p>
     </button>

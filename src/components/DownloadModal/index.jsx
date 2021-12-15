@@ -9,6 +9,8 @@ import ModalBg from "../../assets/modal_bg.svg";
 import { FiLink } from "react-icons/fi";
 import { ModalContext } from "../../context";
 const DownloadModal = ({ zIndex, blurLevel }) => {
+  const [iosCopied, setIosCopied] = React.useState(false);
+  const [androidCopied, setAndroidCopied] = React.useState(false);
   const { state, dispatch } = useContext(ModalContext);
   if (!state.showModal) return null;
   return (
@@ -33,34 +35,42 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
             onClick={() => dispatch({ type: "HIDE_MODAL" })}
             onKeyDown={() => dispatch({ type: "HIDE_MODAL" })}
             tabIndex={0}
-            className="hover:text-secondary hover:cursor-pointer"
+            className="hover:text-secondary hover:cursor-pointer transition ease-in-out duration-200 "
           />
         </div>
         <div className="z-50 flex items-center flex-col justify-center h-full ">
           <p className="text-2xl font-semibold text-center z-30 mb-8">
             Scan to download Nine25 app
           </p>
-          <div className="flex flex-row">
+          <div className="flex flex-row z-50">
             <div
               role="button"
               tabIndex={-1}
-              onKeyDown={() =>
+              onKeyDown={() => {
                 navigator.clipboard.writeText(
                   "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
-                )
-              }
-              onClick={() =>
+                );
+                setIosCopied(true);
+              }}
+              onClick={() => {
                 navigator.clipboard.writeText(
                   "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
-                )
-              }
+                );
+                setIosCopied(true);
+              }}
               className="flex flex-col items-center justify-center"
             >
               <img width={100} src={AppleLogo} alt="Android Logo" />
               <AppleQR />
-              <div className="flex flex-row items-center justify-center text-secondary hover:bg-hover-blue hover:cursor-pointer">
+              <div
+                className={`transition ease-in-out duration-150 flex flex-row items-center justify-center ${
+                  iosCopied
+                    ? "text-success"
+                    : "text-secondary hover:text-hover-blue"
+                } hover:cursor-pointer`}
+              >
                 <FiLink className="mr-2" />
-                <p>copy link</p>
+                <p>{iosCopied ? "link copied" : "copy link"}</p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -69,16 +79,22 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
               <div
                 role="button"
                 tabIndex={-2}
-                onKeyDown={() =>
-                  navigator.clipboard.writeText("ANDROID LINK HERE")
-                }
-                onClick={() =>
-                  navigator.clipboard.writeText("ANDROID LINK HERE")
-                }
-                className="flex flex-row items-center justify-center text-secondary hover:bg-hover-blue hover:cursor-pointer"
+                onKeyDown={() => {
+                  navigator.clipboard.writeText("ANDROID LINK HERE");
+                  return setAndroidCopied(true);
+                }}
+                onClick={() => {
+                  navigator.clipboard.writeText("ANDROID LINK HERE");
+                  return setAndroidCopied(true);
+                }}
+                className={`transition ease-in-out duration-150 flex flex-row items-center justify-center ${
+                  androidCopied
+                    ? "text-success"
+                    : "text-secondary hover:text-hover-blue"
+                } hover:cursor-pointer`}
               >
                 <FiLink className="mr-2" />
-                <p>copy link</p>
+                <p>{androidCopied ? "link copied" : "copy link"}</p>
               </div>
             </div>
           </div>
