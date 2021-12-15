@@ -45,9 +45,79 @@ const MeetTeam = () => {
     }
   };
 
+  const team = [
+    {
+      name: "Leigh Dunsford",
+      image: allImageData.find((image) => image.name === "team_leigh"),
+      tag: "You had me at hello",
+    },
+    {
+      name: "Johnny Jiang",
+      image: allImageData.find((image) => image.name === "team_johnny"),
+      tag: "Here's Johnny",
+    },
+
+    {
+      name: "Shay Ho",
+      image: allImageData.find((image) => image.name === "team_shay"),
+      tag: "Hasta la vista, baby.",
+    },
+    {
+      name: "Prashant Rajkhowa",
+      image: allImageData.find((image) => image.name === "team_prashant"),
+      tag: "The dude abides",
+    },
+    {
+      name: "Michael Yao",
+      image: allImageData.find((image) => image.name === "team_michael"),
+      tag: "Say 'what' again, I dare you",
+    },
+    {
+      name: "Shayne de Groot",
+      image: allImageData.find((image) => image.name === "team_shayne"),
+      tag: "Do. Or do not. There is no try.",
+    },
+    {
+      name: "Unnati Giri",
+      image: allImageData.find((image) => image.name === "team_unnati"),
+      tag: "Where we’re going, we don’t need roads",
+    },
+    {
+      name: "Jeffry Bermudez",
+      image: allImageData.find((image) => image.name === "team_jeffry"),
+      tag: "What does mine say?",
+    },
+    {
+      name: "Dale Pearson",
+      image: allImageData.find((image) => image.name === "team_dale"),
+      tag: "I am the one who knocks",
+    },
+    {
+      name: "Andy Scott",
+      image: allImageData.find((image) => image.name === "team_andy"),
+      tag: "Have you tried turning it off and turning it on again?",
+    },
+    {
+      name: "Aurelee Marion",
+      image: allImageData.find((image) => image.name === "team_aurelee"),
+      tag: "The greatest trick the devil ever pulled was convincing the world he didn't exist.",
+    },
+    {
+      name: "DaQing Li",
+      image: allImageData.find((image) => image.name === "team_daqing"),
+      tag: "As if.",
+    },
+    {
+      name: "Nick Papaziakas",
+      image: allImageData.find((image) => image.name === "team_nick"),
+      tag: "Suit up",
+    },
+  ];
+  console.log("🚀  TESTY:  : MeetTeam : team", team);
+
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-      {allImageData.map((node, index) => {
+      {team.map((node, index) => {
         const bgColour = renderColour(index);
         return (
           <div className={`rounded-lg ${bgColour} shadow`}>
@@ -56,12 +126,12 @@ const MeetTeam = () => {
                 <GatsbyImage
                   key={node.id}
                   alt={`team_member_${node.name}`}
-                  image={node.childImageSharp.gatsbyImageData}
+                  image={node?.image?.childImageSharp?.gatsbyImageData}
                 />
               </div>
-              <div className="text-center text-lg md:text-2xl  pb-4">
-                <p className="font-semibold text-white">Your Name Here</p>
-                <p className=" italic text-white">"You had me at hello"</p>
+              <div className="border h-full text-center text-lg md:text-2xl  pb-4">
+                <p className="font-semibold text-white">{node.name}</p>
+                <p className=" italic text-white">"{node.tag}"</p>
               </div>
             </div>
           </div>

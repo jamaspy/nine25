@@ -15,9 +15,9 @@ export const legal_footer_links = [
 ];
 
 export const socialPlatofrms = [
-  "instagram",
-  "tiktok",
-  "facebook",
-  "twitter",
-  "linkedin",
+  { platform: "instagram", link: "https://www.instagram.com/nine25app/" },
+  { platform: "tiktok", link: "https://www.tiktok.com/@nine25app" },
+  { platform: "facebook", link: "https://www.facebook.com/nine25pay/" },
+  { platform: "twitter", link: "https://twitter.com/nine25app" },
+  { platform: "linkedin", link: "https://www.linkedin.com/company/nine25/" },
 ];
