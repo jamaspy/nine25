@@ -7,7 +7,8 @@ import DHead from "../assets/img_duckHead.svg";
 import Positive from "../assets/img_positive.svg";
 import Simple from "../assets/img_simple.svg";
 import { StaticImage } from "gatsby-plugin-image";
-const aboutus = () => {
+import MeetTeam from "../components/AboutUs/MeetTeam";
+const AboutUs = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="About Us" />
@@ -126,23 +127,10 @@ const aboutus = () => {
         </div>
       </div>
       <div className="container bg-white mx-auto py-12 px-4">
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          <div className="rounded-lg bg-primary shadow">Person</div>
-          <div className="rounded-lg bg-secondary shadow">Person</div>
-          <div className="rounded-lg bg-tertiary shadow">Person</div>
-          <div className="rounded-lg bg-blacked shadow">Person</div>
-          <div className="rounded-lg bg-blacked shadow">Person</div>
-          <div className="rounded-lg bg-tertiary shadow">Person</div>
-          <div className="rounded-lg bg-secondary shadow">Person</div>
-          <div className="rounded-lg bg-primary shadow">Person</div>
-          <div className="rounded-lg bg-primary shadow">Person</div>
-          <div className="rounded-lg bg-secondary shadow">Person</div>
-          <div className="rounded-lg bg-tertiary shadow">Person</div>
-          <div className="rounded-lg bg-blacked shadow">Person</div>
-        </div>
+        <MeetTeam />
       </div>
     </Layout>
   );
 };
 
-export default aboutus;
+export default AboutUs;
