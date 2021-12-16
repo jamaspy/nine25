@@ -8,7 +8,7 @@ const ContactForm = ({ heading }) => {
         {heading}
       </p>
       <form
-        action="https://formspree.io/f/{form_id}"
+        action="https://formspree.io/f/mvolovqz"
         method="post"
         className="lg:p-24"
       >

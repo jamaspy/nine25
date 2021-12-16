@@ -18,13 +18,13 @@ const aboutus = () => {
         <div className="container mb-12 h-full">
           <TopBox />
         </div>
-        <div className="container">
-          <p className="lg:text-5xl md:text-2xl text-xl font-semibold text-center my-8 lg:px-8">
+        <div className="lg:w-1/2">
+          <p className="lg:text-5xl md:text-4xl text-3xl font-semibold text-center my-8 px-2 lg:leading-relaxed">
             Why incorporate Nine25’s salary streaming technology into your
             business?
           </p>
         </div>
-        <div className="container grid gap-8 grid-cols-1 md:grid-cols-2">
+        <div className="container grid gap-8 grid-cols-1 md:grid-cols-2 md:px-2">
           <div className="rounded-2xl shadow bg-white flex flex-col items-center justify-center p-4">
             <Attract />
             <div className="">
@@ -70,7 +70,7 @@ const aboutus = () => {
           </div>
         </div>
         <div className="p-4 container bg-white flex md:flex-row flex-col-reverse items-center justify-between mx-auto w-full mt-8 rounded-2xl shadow">
-          <div className="md:mr-8">
+          <div className="md:mr-8 md:w-1/2">
             <p className="text-2xl font-semibold mb-4">Engage</p>
             <p className="text-xl mb-4">
               Invest in a benefit program that will change lives
@@ -88,7 +88,7 @@ const aboutus = () => {
             </p>
           </div>
 
-          <div className="w-full my-4">
+          <div className="w-full my-4 md:w-1/2">
             <Engage />
           </div>
         </div>

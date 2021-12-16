@@ -18,8 +18,8 @@ const Feature = ({ title, subtitle, imgNumber }) => {
   return (
     <div key={imgNumber} className="flex-1 flex flex-col items-center m-12">
       <div className="">{renderImage()}</div>
-      <p className="font-medium text-blacked text-xl">{title}</p>
-      <p className="">{subtitle}</p>
+      <p className="font-medium text-blacked text-xl mt-2">{title}</p>
+      <p className="text-center">{subtitle}</p>
     </div>
   );
 };

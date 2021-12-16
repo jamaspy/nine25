@@ -52,10 +52,10 @@ const Benefit = ({ title, paragraphs, key, isWide, isComingSoon }) => {
       </div>
       {isComingSoon && (
         <div className="w-full bg-secondary py-8 px-4 relative">
-          <p className="text-white">
+          <p className="text-white w-2/3 ">
             Shop with Nine25 card & pay your bills with direct debit.
           </p>
-          <div className="absolute right-0 -top-14">
+          <div className="absolute lg:right-5 right-0 -top-12">
             <ComingSoonSVG />
           </div>
         </div>
