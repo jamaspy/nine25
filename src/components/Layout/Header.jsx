@@ -10,7 +10,7 @@ const Menu = () => {
       <nav className="relative flex  items-center justify-between px-2 py-3 ">
         <Link
           className="text-xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap  "
-          href="/"
+          to="/"
         >
           <LogoSVG style={{ width: "50%" }} />
         </Link>

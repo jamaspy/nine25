@@ -3,7 +3,7 @@ import SpendSVG from "../../assets/img_spend.svg";
 import ManageSVG from "../../assets/img_manage.svg";
 import InvestSVG from "../../assets/img_invest.svg";
 import ComingSoonSVG from "../../assets/coming_soon.svg";
-const Benefit = ({ title, paragraphs, key, isWide, isComingSoon }) => {
+const Benefit = ({ title, paragraphs, index, isWide, isComingSoon }) => {
   const renderImage = () => {
     switch (title) {
       case "Spend":
@@ -18,7 +18,7 @@ const Benefit = ({ title, paragraphs, key, isWide, isComingSoon }) => {
   };
   return (
     <div
-      key={key}
+      key={index}
       className={`${
         isWide ? "md:col-span-2" : "col-span-1"
       } bg-white overflow-hidden shadow-sm rounded-lg`}

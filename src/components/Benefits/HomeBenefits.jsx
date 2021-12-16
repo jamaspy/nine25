@@ -7,6 +7,7 @@ const HomeBenefits = ({ children }) => {
       {home_benefits.map((benefit, index) => (
         <Benefit
           key={index}
+          index={index}
           title={benefit.title}
           paragraphs={benefit.paragraphs}
           isWide={benefit.isWide}

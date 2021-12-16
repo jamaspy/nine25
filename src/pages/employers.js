@@ -118,7 +118,10 @@ const aboutus = () => {
           </div>
         </div>
         <div className="container rounded-3xl bg-white shadow-sm p-12 my-12">
-          <Form heading="Please, tell us what’s on your mind" />
+          <Form
+            heading="Please, tell us what’s on your mind"
+            pageTitle="Employers"
+          />
         </div>
       </div>
     </Layout>
