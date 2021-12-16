@@ -1,34 +1,80 @@
 import React from "react";
-import ModalBg from "../../assets/employers_modal_bg.svg";
-import { PrimaryButton, SecondaryButton } from "../../components/Buttons";
+import { renderToStaticMarkup } from "react-dom/server";
+import {
+  PrimaryButton,
+  SecondaryButton,
+  MobileSecondaryButton,
+  MobilePrimaryButton,
+} from "../../components/Buttons";
+
+import WebBG from "./BgImg";
+import MobBG from "./MobBgImage";
 const TopBox = () => {
+  const webSVGString = encodeURIComponent(renderToStaticMarkup(<WebBG />));
+  const mobileSVGString = encodeURIComponent(renderToStaticMarkup(<MobBG />));
   return (
-    <div className="relative mt-12 mx-2">
-      <ModalBg className="" />
-      <p
-        className="lg:text-5xl md:text-2xl text-xl font-semibold text-center"
-        style={{
-          position: "absolute",
-          top: "30%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
-        }}
-      >
-        Improving the financial health of your emloyees starts today
-      </p>
+    <>
+      {/* Desktop View */}
       <div
-        className="flex flex-col md:flex-row justify-center items-center lg:mt-20 w-full"
+        className="hidden md:hidden mt-12 mx-2 container lg:flex items-center justify-center"
         style={{
-          position: "absolute",
-          top: "40%",
-          left: "50%",
-          transform: "translate(-50%, -50%)",
+          backgroundImage: `url("data:image/svg+xml,${webSVGString}")`,
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          minHeight: "700px",
         }}
       >
-        <SecondaryButton text="Get Started" className="mr-8" />
-        <PrimaryButton text="Schedule a Meeting" />
+        <div className="w-1/2 lg:mb-24">
+          <p className="lg:text-5xl md:text-4xl text-3xl font-semibold text-center mb-8 lg:leading-relaxed">
+            Improving the financial health of your employees starts today
+          </p>
+          <div className="hidden md:flex md:flex-row justify-center items-center lg:mt-20 w-full">
+            <SecondaryButton text="Get Started" className="mr-8" />
+            <PrimaryButton text="Schedule a Meeting" />
+          </div>
+        </div>
       </div>
-    </div>
+      {/* iPad View */}
+      <div
+        className="hidden md:flex mt-12 mx-2 container lg:hidden items-center justify-center w-full"
+        style={{
+          backgroundImage: `url("data:image/svg+xml,${webSVGString}")`,
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          minHeight: "500px",
+        }}
+      >
+        <div className="w-1/2 md:mb-24">
+          <p className="lg:text-5xl md:text-4xl text-3xl font-semibold text-center mb-8 lg:leading-relaxed">
+            Improving the financial health of your employees starts today
+          </p>
+          <div className="hidden md:flex md:flex-row justify-center items-center lg:mt-20 w-full">
+            <MobileSecondaryButton text="Get Started" className="mr-4" />
+            <MobilePrimaryButton text="Schedule a Meeting" />
+          </div>
+        </div>
+      </div>
+      {/* Mobile View */}
+      <div
+        className="flex md:hidden lg:hidden mt-12 container items-center justify-center "
+        style={{
+          backgroundImage: `url("data:image/svg+xml,${mobileSVGString}")`,
+          backgroundSize: "100% 100%",
+          backgroundPosition: "center",
+          minHeight: "700px",
+        }}
+      >
+        <div className="w-1/2 mb-24">
+          <p className="lg:text-5xl md:text-4xl text-3xl font-semibold text-center mb-8 lg:leading-relaxed">
+            Improving the financial health of your employees starts today
+          </p>
+          <div className="flex flex-col justify-center items-center lg:mt-20 w-full">
+            <MobileSecondaryButton text="Get Started" className="mb-4" />
+            <MobilePrimaryButton text="Schedule a Meeting" />
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
