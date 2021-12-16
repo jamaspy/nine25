@@ -13,6 +13,7 @@ const HomeFeatures = () => {
       <div className="container grid gap-4 grid-cols-1 md:grid-cols-3 lg:mx-auto">
         {home_features.map((feature, index) => (
           <Feature
+            key={index}
             imgNumber={index}
             title={feature.title}
             subtitle={feature.subtitle}

@@ -29,7 +29,10 @@ const Socials = ({ classes }) => {
   return (
     <div className="w-full flex lg:flex-col items-center justify-center lg:mt-2 mt-8 mb-4">
       {socialPlatofrms.map(({ platform, link }) => (
-        <div className="w-8 h-8 cursor-pointer bg-gray-dark rounded-full flex items-center justify-center mx-2 lg:my-2">
+        <div
+          key={platform}
+          className="w-8 h-8 cursor-pointer bg-gray-dark rounded-full flex items-center justify-center mx-2 lg:my-2"
+        >
           <a href={link} target="_blank" rel="noreferrer noopener">
             {renderIcon(platform)}
           </a>
