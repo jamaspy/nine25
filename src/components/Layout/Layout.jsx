@@ -6,7 +6,10 @@ import { ModalProvider } from "../../context";
 const Layout = ({ children, device }) => {
   return (
     <ModalProvider>
-      <div className="min-h-screen flex flex-col justify-between">
+      <div
+        className="min-h-screen flex flex-col justify-between mx-auto"
+        style={{ maxWidth: 1440 }}
+      >
         <Header />
         <DownloadModal />
         <main className="flex-1">{children}</main>

@@ -14,7 +14,7 @@ const aboutus = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="Employers" />
-      <div className=" flex flex-col items-center justify-center bg-gray-lighter">
+      <div className=" flex flex-col items-center justify-center bg-gray-lighter px-2">
         <div className="container mb-12 h-full">
           <TopBox />
         </div>
@@ -69,7 +69,7 @@ const aboutus = () => {
             </div>
           </div>
         </div>
-        <div className="p-4 container bg-white flex md:flex-row flex-col-reverse items-center justify-between mx-auto w-full mt-8 rounded-2xl shadow">
+        <div className="p-4  bg-white flex md:flex-row flex-col-reverse items-center justify-between mx-auto md:mx-2 w-full mt-8 rounded-2xl shadow">
           <div className="md:mr-8 md:w-1/2">
             <p className="text-2xl font-semibold mb-4">Engage</p>
             <p className="text-xl mb-4">

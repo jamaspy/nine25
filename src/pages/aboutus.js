@@ -12,7 +12,7 @@ const AboutUs = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="About Us" />
-      <div className="lg:w-1/3 w-3/4 mx-auto px-4">
+      <div className="lg:w-1/2 w-3/4 mx-auto px-4">
         <p className="lg:text-4xl md:text-3xl text-2xl font-semibold mb-4">
           Our Story
         </p>

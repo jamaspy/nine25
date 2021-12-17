@@ -15,6 +15,6 @@ export const home_features = [
     id: 3,
     title: "Innovation",
     subtitle:
-      "Nine25’s salary streaming technology is a world first in financial services.We are Guinnes World Record material (someone call them) - we are just getting started.",
+      "Nine25’s salary streaming technology is a world first in financial services. We are Guinness World Records material (someone call them) - we are just getting started.",
   },
 ];
