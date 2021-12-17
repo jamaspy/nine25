@@ -12,7 +12,7 @@ const ContactForm = ({ heading, pageTitle }) => {
 
   return (
     <>
-      <p className="font-semibold lg:text-4xl md:text-2xl text-xl text-center mb-4">
+      <p className="font-semibold lg:text-4xl text-2xl text-center mb-4">
         {heading}
       </p>
       {state?.succeeded && (
@@ -21,7 +21,7 @@ const ContactForm = ({ heading, pageTitle }) => {
           <p>Thank you, we will get back to you shortly</p>
         </div>
       )}
-      <form onSubmit={handleSubmit} className="lg:p-24">
+      <form onSubmit={handleSubmit} className="w-full px-4 my-8">
         <div className="flex flex-col md:flex-row">
           <input
             name="name"
@@ -110,7 +110,7 @@ const ContactForm = ({ heading, pageTitle }) => {
             I want to get updates & offers
           </label>
         </div>
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col items-center justify-center mt-8">
           <SendButton
             type="submit"
             label={`${state?.succeeded ? "Sent" : "Send"}`}
