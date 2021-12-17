@@ -43,7 +43,7 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
               dispatch({ type: "HIDE_MODAL" });
             }}
             tabIndex={0}
-            className="hover:text-secondary hover:cursor-pointer transition ease-in-out duration-200 "
+            className="hover:text-secondary hover:cursor-pointer transition ease-in-out duration-200 focus:outline-none"
           />
         </div>
         <div className="z-50 flex items-center flex-col justify-center h-full ">
