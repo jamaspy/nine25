@@ -32,8 +32,16 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
           <CgClose
             role="button"
             aria-label="Close"
-            onClick={() => dispatch({ type: "HIDE_MODAL" })}
-            onKeyDown={() => dispatch({ type: "HIDE_MODAL" })}
+            onClick={() => {
+              setIosCopied(false);
+              setAndroidCopied(false);
+              dispatch({ type: "HIDE_MODAL" });
+            }}
+            onKeyDown={() => {
+              setIosCopied(false);
+              setAndroidCopied(false);
+              dispatch({ type: "HIDE_MODAL" });
+            }}
             tabIndex={0}
             className="hover:text-secondary hover:cursor-pointer transition ease-in-out duration-200 "
           />
@@ -58,7 +66,7 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
                 );
                 setIosCopied(true);
               }}
-              className="flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center mr-2"
             >
               <img width={100} src={AppleLogo} alt="Android Logo" />
               <AppleQR />
@@ -73,7 +81,7 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
                 <p>{iosCopied ? "link copied" : "copy link"}</p>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center ml-2">
               <img width={100} src={AndroidLogo} alt="Android Logo" />
               <AndroidQR />
               <div
