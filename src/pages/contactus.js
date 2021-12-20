@@ -8,7 +8,7 @@ const aboutus = () => {
     <Layout device={checkDevice}>
       <div className="w-3/4 lg:w-1/2 mx-auto h-full flex items-center justify-center flex-col lg:mt-24 mt-12">
         <ContactForm
-          heading="Please, tell us what’s on your mind"
+          heading="Please, tell us what’s on your mind."
           pageTitle="Contact Us"
         />
       </div>

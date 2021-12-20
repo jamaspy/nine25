@@ -84,7 +84,7 @@ const AboutUs = () => {
                 Drive positive outcomes
               </p>
               <p className="mb-2 text-lg">
-                This is why we do what we do.At heart of every dicision freedom
+                This is why we do what we do. At heart of every decision freedom
                 is possible for every at all costs and we definitely not about
                 young adults being shoved toward a lifetime of debt and
                 repayments.
