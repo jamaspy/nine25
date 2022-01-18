@@ -12,7 +12,7 @@ const index = ({ device }) => {
     <div className="flex flex-col flex-shrink mt-12 md:flex-row md:justify-center relative overflow-hidden">
       <DownloadModal />
       <div className="">
-        <div className="flex flex-col items-center justify-center xl:justify-start lg:items-start lg:mt-24 xl:ml-24 bg-red-700">
+        <div className="flex flex-col items-center justify-center xl:justify-start xl:items-start 2xl:mt-24 2xl:ml-24">
           <p className="text-4xl md:text-5xl font-black">Now Streaming:</p>
           <p className="text-4xl md:text-5xl font-bold my-2" style={radialFill}>
             Your salary.
@@ -50,7 +50,7 @@ const index = ({ device }) => {
           <StarSVG />
         </div>
       </div>
-      <div className="flex md:hidden flex-shrink items-center">
+      <div className="flex lg:hidden flex-shrink items-center">
         <HeroSVG />
       </div>
       <div className="hidden md:flex xl:hidden flex-shrink items-center">
