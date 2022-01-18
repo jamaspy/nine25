@@ -10,7 +10,7 @@ const HomeFeatures = () => {
           What we provide
         </p>
       </div>
-      <div className="container grid gap-4 grid-cols-1 md:grid-cols-3 lg:mx-auto">
+      <div className="container grid gap-4 grid-cols-1 md:grid-cols-3 mx-auto ">
         {home_features.map((feature, index) => (
           <Feature
             key={index}
