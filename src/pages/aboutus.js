@@ -33,7 +33,7 @@ const AboutUs = () => {
           }}
         >
           <StaticImage
-            src="../images/aboutus_blue.png"
+            src="../images/team_final.png"
             alt="about us"
             layout="constrained"
             width={845}

@@ -2,6 +2,8 @@ import React from "react";
 import { radialFill } from "../../styles/textGradientStyleObjects";
 import { DownloadAndroid, DownloadIOS } from "../Buttons";
 import HeroSVG from "../../assets/hero.svg";
+import HeroMobileSVG from "../../assets/hero_mobile.svg";
+import HeroTabletSVG from "../../assets/hero_tablet.svg";
 import StarSVG from "../../assets/yellow_star.svg";
 import DownloadModal from "../DownloadModal";
 import Typical from "./Typing";
@@ -10,7 +12,7 @@ const index = ({ device }) => {
     <div className="flex flex-col flex-shrink mt-12 md:flex-row md:justify-center relative overflow-hidden">
       <DownloadModal />
       <div className="md:pl-4">
-        <div className="flex flex-col items-center justify-center xl:justify-start lg:items-start lg:mt-24 lg:ml-24">
+        <div className="flex flex-col items-center justify-center xl:justify-start lg:items-start lg:mt-24 xl:ml-24">
           <p className="text-4xl md:text-5xl font-black">Now Streaming:</p>
           <p className="text-4xl md:text-5xl font-bold my-2" style={radialFill}>
             Your salary
@@ -44,12 +46,18 @@ const index = ({ device }) => {
             )}
           </div>
         </div>
-        <div className="absolute -bottom-10 left-0 hidden md:block">
+        <div className="md:hidden absolute lg:-bottom-20 left-0 hidden lg:block">
           <StarSVG />
         </div>
       </div>
-      <div className="flex flex-shrink items-center -mt-36 lg:mt-0 justify-end xl:mr-24 md:max-w-md lg:max-w-none">
+      <div className="flex md:hidden flex-shrink items-center">
         <HeroSVG />
+      </div>
+      <div className="hidden md:flex xl:hidden flex-shrink items-center">
+        <HeroTabletSVG />
+      </div>
+      <div className="hidden xl:flex flex-shrink items-center">
+        <HeroMobileSVG />
       </div>
     </div>
   );
