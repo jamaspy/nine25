@@ -1,5 +1,5 @@
 import React from "react";
-import PlaySVG from "../../assets/google_play.svg";
+import PlaySVG from "../../assets/google_play_standardised.svg";
 const DownloadAndroid = ({ className }) => {
   return (
     <button
