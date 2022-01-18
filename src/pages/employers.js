@@ -9,7 +9,6 @@ import Engage from "../assets/img_engage.svg";
 import Health from "../assets/img_health.svg";
 import Debit from "../assets/img_debit.svg";
 import Analytics from "../assets/img_analytics.svg";
-import Form from "../components/Form";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
