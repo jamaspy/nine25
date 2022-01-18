@@ -9,17 +9,16 @@ import Engage from "../assets/img_engage.svg";
 import Health from "../assets/img_health.svg";
 import Debit from "../assets/img_debit.svg";
 import Analytics from "../assets/img_analytics.svg";
-import Form from "../components/Form";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="Employers" />
-      <div className=" flex flex-col items-center justify-center bg-gray-lighter px-2">
+      <div className=" flex flex-col items-center justify-center bg-gray-lighter px-2 lg:px-0">
         <div className="container mb-12 h-full">
           <TopBox />
         </div>
         <div className="lg:w-1/2">
-          <p className="lg:text-5xl md:text-4xl text-3xl font-semibold text-center my-8 px-2 lg:leading-relaxed">
+          <p className="lg:text-5xl md:text-4xl text-3xl font-bold text-center my-8 px-2 lg:leading-relaxed">
             Why incorporate Nine25’s salary streaming technology into your
             business?
           </p>
@@ -28,8 +27,8 @@ const aboutus = () => {
           <div className="rounded-2xl shadow bg-white flex flex-col items-center justify-center p-4">
             <Attract />
             <div className="">
-              <p className="text-2xl font-semibold mb-4">Attract</p>
-              <p className="text-xl mb-4">
+              <p className="text-2xl font-bold mb-4">Attract</p>
+              <p className="text-xl mb-4 font-medium">
                 Show the candidate market that you care
               </p>
               <p className="mb-4">
@@ -52,8 +51,8 @@ const aboutus = () => {
           <div className="rounded-2xl shadow bg-white flex flex-col items-center justify-center p-4">
             <Retain />
             <div className="">
-              <p className="text-2xl font-semibold mb-4">Retain</p>
-              <p className="text-xl mb-4">
+              <p className="text-2xl font-bold mb-4">Retain</p>
+              <p className="text-xl mb-4 font-medium">
                 It’s expensive and time consuming replacing people
               </p>
               <p className="mb-4">
@@ -69,10 +68,10 @@ const aboutus = () => {
             </div>
           </div>
         </div>
-        <div className="p-4  bg-white flex md:flex-row flex-col-reverse items-center justify-between mx-auto md:mx-2 w-full mt-8 rounded-2xl shadow">
+        <div className="p-4 bg-white flex md:flex-row flex-col-reverse items-center justify-between mx-auto md:mx-4  mt-8 rounded-2xl shadow">
           <div className="md:mr-8 md:w-1/2">
-            <p className="text-2xl font-semibold mb-4">Engage</p>
-            <p className="text-xl mb-4">
+            <p className="text-2xl font-bold mb-4">Engage</p>
+            <p className="text-xl mb-4 font-medium">
               Invest in a benefit program that will change lives
             </p>
             <p className="mb-4">
@@ -92,10 +91,8 @@ const aboutus = () => {
             <Engage />
           </div>
         </div>
-        <div className="w-full bg-white mt-12 pb-12 px-4 text-center">
-          <p className="text-2xl font-semibold text-center my-8">
-            What we offer
-          </p>
+        <div className="w-full bg-white mt-12 pb-12 text-center">
+          <p className="text-4xl font-bold text-center my-8">What we offer</p>
           <div className="w-full flex flex-col md:flex-row justify-around">
             <div className="flex flex-col items-center justify-center mb-8">
               <Health />
@@ -117,12 +114,12 @@ const aboutus = () => {
             </p>
           </div>
         </div>
-        <div className="container rounded-3xl bg-white shadow-sm p-12 my-12">
+        {/* <div className="container rounded-3xl bg-white shadow-sm p-12 my-12">
           <Form
             heading="Please, tell us what’s on your mind"
             pageTitle="Employers"
           />
-        </div>
+        </div> */}
       </div>
     </Layout>
   );

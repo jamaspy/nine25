@@ -1,5 +1,5 @@
 import React from "react";
-import ITunesSVG from "../../assets/download_itunes.svg";
+import ITunesSVG from "../../assets/app_store_standardised.svg";
 const DownloadIOS = ({ className, location }) => {
   return (
     <button

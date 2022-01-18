@@ -10,7 +10,7 @@ const SecondaryButton = ({ className, text }) => {
       style={{ minWidth: "286px", minHeight: "72px" }}
       className={`bg-secondary hover:bg-secondary-hover transition ease-in-out duration-200 text-white rounded-full flex items-center justify-center cursor-pointer ${className}`}
     >
-      <p className="text-tertiary">{text}</p>
+      <p className="text-tertiary font-bold">{text}</p>
     </button>
   );
 };

@@ -119,7 +119,7 @@ const MeetTeam = () => {
       {team.map((node, index) => {
         const bgColour = renderColour(index);
         return (
-          <div className={`rounded-lg ${bgColour} shadow`}>
+          <div className={`rounded-lg ${bgColour} shadow p-1`}>
             <div className="flex flex-col items-center justify-between h-full w-full">
               <div className={styles.clipCircle}>
                 <GatsbyImage
@@ -129,8 +129,8 @@ const MeetTeam = () => {
                 />
               </div>
               <div className="h-full text-center text-lg md:text-2xl  pb-4">
-                <p className="font-semibold text-white">{node.name}</p>
-                <p className=" italic text-white">"{node.tag}"</p>
+                <p className="font-bold text-white">{node.name}</p>
+                <p className="font-normal italic text-white">"{node.tag}"</p>
               </div>
             </div>
           </div>
