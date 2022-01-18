@@ -34,13 +34,13 @@ const Benefit = ({ title, paragraphs, index, isWide, isComingSoon }) => {
           </div>
         )}
         <div className="flex-1 p-4 flex items-start justify-center flex-col">
-          <p className="text-xl font-medium mb-4">{title}</p>
+          <p className="text-xl font-bold mb-4">{title}</p>
           {paragraphs.map((paragraph, index) => (
-            <p key={index} className="text-lg mb-2">
+            <p key={index} className="text-lg mb-2 font-normal">
               {paragraph}
             </p>
           ))}
-          {/* <p className="text-secondary hover:text-hover-blue hover:cursor-pointer flex flex-row items-center justify-start">
+          {/* <p className="text-secondary hover:text-hover-blue hover:cursor-pointer flex flex-row items-center justify-start font-semibold">
             Read More <HiOutlineChevronRight className="ml-4" />
           </p> */}
         </div>
@@ -52,7 +52,7 @@ const Benefit = ({ title, paragraphs, index, isWide, isComingSoon }) => {
       </div>
       {isComingSoon && (
         <div className="w-full bg-secondary py-8 px-4 relative">
-          <p className="text-white w-2/3 ">
+          <p className="text-white w-2/3 font-normal">
             Shop with Nine25 card & pay your bills with direct debit.
           </p>
           <div className="absolute lg:right-5 right-0 -top-12">

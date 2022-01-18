@@ -10,7 +10,7 @@ const MobileSecondaryButton = ({ className, text }) => {
       style={{ minWidth: "255px", minHeight: "58px" }}
       className={`bg-secondary hover:bg-secondary-hover transition ease-in-out duration-200 text-white rounded-full flex items-center justify-center cursor-pointer ${className}`}
     >
-      <p className="text-tertiary">{text}</p>
+      <p className="text-tertiary font-bold">{text}</p>
     </button>
   );
 };
