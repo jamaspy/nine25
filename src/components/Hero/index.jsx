@@ -12,15 +12,12 @@ const index = ({ device }) => {
       <div className="md:pl-4">
         <div className="flex flex-col items-center justify-center xl:justify-start lg:items-start lg:mt-24 lg:ml-24">
           <p className="text-4xl md:text-5xl font-black">Now Streaming:</p>
-          <p
-            className="text-4xl md:text-5xl font-semibold my-2"
-            style={radialFill}
-          >
+          <p className="text-4xl md:text-5xl font-bold my-2" style={radialFill}>
             Your salary
           </p>
           <div className="flex flex-row flex-wrap items-center justify-center mt-4 text-xl text-center md:text-left px-4 md:p-0">
             <p>The</p>{" "}
-            <span className="bg-primary px-1">
+            <span className="bg-primary mx-1">
               <Typical
                 steps={[
                   "revolutionary",
