@@ -3,7 +3,11 @@ import Links from "./Links";
 import Socials from "./Socials";
 import Disclaimer from "./Disclaimer";
 import LogoCopyright from "./LogoCopyright";
-import { DownloadAndroid, DownloadIOS, WhiteButton } from "../../Buttons";
+import {
+  DownloadAndroidWhite,
+  DownloadIOSWhite,
+  WhiteButton,
+} from "../../Buttons";
 import FooterLogoLarge from "../../../assets/logo_white_large.svg";
 const Footer = ({ device }) => {
   return (
@@ -17,8 +21,8 @@ const Footer = ({ device }) => {
             Start Streaming Now
           </p>
           <div className="my-8  w-full">
-            {device() === "ios" && <DownloadIOS location="footer" />}
-            {device() === "android" && <DownloadAndroid />}
+            {device() === "ios" && <DownloadIOSWhite location="footer" />}
+            {device() === "android" && <DownloadAndroidWhite />}
           </div>
         </div>
       </div>
@@ -32,8 +36,8 @@ const Footer = ({ device }) => {
                 Start Streaming Now
               </p>
               <div className="my-8">
-                {device() === "ios" && <DownloadIOS />}
-                {device() === "android" && <DownloadAndroid />}
+                {device() === "ios" && <DownloadIOSWhite />}
+                {device() === "android" && <DownloadAndroidWhite />}
                 {device() === "desktop" && (
                   <WhiteButton
                     // className="hidden md:inline-block"
