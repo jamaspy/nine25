@@ -40,13 +40,17 @@ const index = ({ device }) => {
           </span>
           <p className="">way to spend, manage & invest your salary.</p>
         </div>
-        <div className="flex flex-row border justify-start items-start mt-12">
+        <div className="flex flex-row justify-start items-start mt-12">
           {device() === "ios" && <DownloadIOS location="body" />}
           {device() === "android" && <DownloadAndroid />}
           {device() === "desktop" && (
             <>
-              <DownloadIOS className="mr-8" />
-              <DownloadAndroid />
+              <div className="grow-0">
+                <DownloadIOS className="mr-8" />
+              </div>
+              <div className="grow-0">
+                <DownloadAndroid />
+              </div>
             </>
           )}
         </div>
