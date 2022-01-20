@@ -9,10 +9,16 @@ import Engage from "../assets/img_engage.svg";
 import Health from "../assets/img_health.svg";
 import Debit from "../assets/img_debit.svg";
 import Analytics from "../assets/img_analytics.svg";
+import { Breadcrumbs } from "../components/Layout";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="Employers" />
+      <Breadcrumbs
+        rootLabel="Home"
+        rootRoute="/"
+        currentLabel="For Employers"
+      />
       <div className=" flex flex-col items-center justify-center bg-gray-lighter px-2 lg:px-0">
         <div className="container mb-12 h-full">
           <TopBox />

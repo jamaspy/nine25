@@ -8,10 +8,12 @@ import Positive from "../assets/img_positive.svg";
 import Simple from "../assets/img_simple.svg";
 import { StaticImage } from "gatsby-plugin-image";
 import MeetTeam from "../components/AboutUs/MeetTeam";
+import { Breadcrumbs } from "../components/Layout";
 const AboutUs = () => {
   return (
     <Layout device={checkDevice}>
       <Seo title="About Us" />
+      <Breadcrumbs rootLabel="Home" rootRoute="/" currentLabel="About Us" />
       <div className="lg:w-1/2 w-3/4 mx-auto px-4">
         <p className="lg:text-4xl md:text-3xl text-2xl font-bold mb-4">
           Our Story

@@ -2,10 +2,12 @@ import React from "react";
 import { Layout } from "../components/Layout";
 import { checkDevice } from "../utils";
 import ContactForm from "../components/Form";
+import { Breadcrumbs } from "../components/Layout";
 // import AnswerList from "../components/FAQ/AnswerList";
 const aboutus = () => {
   return (
     <Layout device={checkDevice}>
+      <Breadcrumbs rootLabel="Home" rootRoute="/" currentLabel="Contact Us" />
       <div className="w-3/4 lg:w-1/2 mx-auto h-full flex items-center justify-center flex-col lg:mt-24 mt-12">
         <ContactForm
           heading="Please, tell us what’s on your mind."

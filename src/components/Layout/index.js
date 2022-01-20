@@ -1,5 +1,5 @@
 import Footer from "./Footer/Footer";
 import Header from "./Header";
 import Layout from "./Layout";
-
-export { Footer, Header, Layout };
+import Breadcrumbs from "./Breadcrumb";
+export { Breadcrumbs, Footer, Header, Layout };

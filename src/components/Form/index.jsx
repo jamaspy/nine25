@@ -22,30 +22,38 @@ const ContactForm = ({ heading, pageTitle }) => {
         </div>
       )}
       <form onSubmit={handleSubmit} className="w-full px-4 my-8">
-        <div className="flex flex-col md:flex-row">
-          <input
-            name="name"
-            id="name"
-            type="text"
-            className="border-b focus:outline-none mr-8 my-4"
-            placeholder="Name"
-          />
-          <ValidationError prefix="Name" field="name" errors={state.errors} />
-          <input
-            name="email"
-            id="email"
-            type="email"
-            className="border-b focus:outline-none my-4"
-            placeholder="Email"
-          />
-          <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <div className="flex flex-col w-full justify-between md:flex-row ">
+          <div className="flex-1 md:pr-2">
+            <input
+              name="name"
+              id="name"
+              type="text"
+              className="border-b focus:outline-none mr-8 my-4 w-full"
+              placeholder="Name"
+            />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
+          </div>
+          <div className="flex-1 md:pl-2">
+            <input
+              name="email"
+              id="email"
+              type="email"
+              className="border-b focus:outline-none my-4 w-full"
+              placeholder="Email"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+          </div>
         </div>
         <div className="flex flex-col my-4 md:mt-8">
           <input
             name="details"
             id="details"
             type="text"
-            className="border-b focus:outline-none"
+            className="border-b focus:outline-none "
             placeholder="Details"
           />
           <ValidationError
@@ -105,7 +113,7 @@ const ContactForm = ({ heading, pageTitle }) => {
           </div>
           <label
             htmlFor="consent"
-            class="text-xs text-blacked block mt-2 md:inline md:mt-0"
+            class="text-xs text-blacked mt-2 inline md:mt-0"
           >
             I want to get updates & offers
           </label>

@@ -3,6 +3,7 @@ import Links from "./Links";
 import Socials from "./Socials";
 import Disclaimer from "./Disclaimer";
 import LogoCopyright from "./LogoCopyright";
+import LargeFooterLogo from "../../../images/Large_Footer_Logo.svg";
 import {
   DownloadAndroidWhite,
   DownloadIOSWhite,
@@ -29,7 +30,7 @@ const Footer = ({ device }) => {
       <div className="hidden lg:flex">
         <div className="flex flex-row items-center justify-between w-full">
           <div className="">
-            <FooterLogoLarge className="z-10" />
+            <img src={LargeFooterLogo} alt="nine25 footer logo large" />
             <Disclaimer />
             <div className="">
               <p className="text-xl text-center lg:text-left font-semibold">

@@ -11,7 +11,7 @@ const DownloadIOS = ({ className, location }) => {
           );
       }}
       style={{ minWidth: "250px", minHeight: "65px" }}
-      className={`bg-blacked text-white border rounded-full  flex items-center justify-center hover:cursor-pointer ${className} mx-auto`}
+      className={`bg-blacked text-white border rounded-full flex items-center justify-center hover:cursor-pointer ${className} mx-auto`}
     >
       <ITunesSVG />
     </button>

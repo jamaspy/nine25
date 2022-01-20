@@ -9,10 +9,10 @@ import DownloadModal from "../DownloadModal";
 import Typical from "./Typing";
 const index = ({ device }) => {
   return (
-    <div className="flex flex-col flex-grow-0 flex-shrink mt-12 md:flex-row md:justify-center relative overflow-hidden">
+    <div className="flex flex-col flex-grow-0 flex-shrink mt-12 md:flex-row md:justify-between relative overflow-hidden">
       <DownloadModal />
 
-      <div className="px-2 md:min-w-[43%]">
+      <div className="px-2 ">
         <p className="text-4xl md:text-5xl font-black text-center md:text-left">
           Now Streaming:
         </p>
@@ -22,7 +22,7 @@ const index = ({ device }) => {
         >
           Your salary.
         </p>
-        <div className="flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start mt-4 text-xl text-center md:text-left px-4 md:p-0 ">
+        <div className="overflow-hidden flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start mt-4 text-xl text-center md:text-left px-4 md:p-0 ">
           <p>The</p>{" "}
           <span className="bg-primary mx-1">
             <Typical
@@ -40,13 +40,17 @@ const index = ({ device }) => {
           </span>
           <p className="">way to spend, manage & invest your salary.</p>
         </div>
-        <div className="flex flex-row grow-0 w-full justify-start mt-12">
+        <div className="flex flex-row justify-start items-start mt-12">
           {device() === "ios" && <DownloadIOS location="body" />}
           {device() === "android" && <DownloadAndroid />}
           {device() === "desktop" && (
             <>
-              <DownloadIOS className="mr-8" />
-              <DownloadAndroid />
+              <div className="grow-0">
+                <DownloadIOS className="mr-8" />
+              </div>
+              <div className="grow-0">
+                <DownloadAndroid />
+              </div>
             </>
           )}
         </div>
