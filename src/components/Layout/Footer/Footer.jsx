@@ -37,8 +37,10 @@ const Footer = ({ device }) => {
                 Start Streaming Now
               </p>
               <div className="my-8">
-                {device() === "ios" && <DownloadIOSWhite />}
-                {device() === "android" && <DownloadAndroidWhite />}
+                {device() === "ios" && <DownloadIOSWhite location="footer" />}
+                {device() === "android" && (
+                  <DownloadAndroidWhite location="footer" />
+                )}
                 {device() === "desktop" && (
                   <WhiteButton
                     // className="hidden md:inline-block"

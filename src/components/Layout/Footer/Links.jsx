@@ -60,10 +60,10 @@ const Links = () => {
               : "hidden"
           }`}
         >
-          <Link to="/aboutus">
+          <Link to="/about-us">
             <p className="text-xs my-2">About</p>
           </Link>
-          <Link to="/contactus">
+          <Link to="/contact-us">
             <p className="text-xs my-2 mb-4">Contact Us</p>
           </Link>
         </div>
@@ -87,7 +87,7 @@ const Links = () => {
               : "hidden"
           }`}
         >
-          <Link to="/aboutus">
+          <Link to="/abou-tus">
             <p className="text-xs my-2 mb-4">Blog</p>
           </Link>
         </div> */}

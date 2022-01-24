@@ -42,14 +42,14 @@ const index = ({ device }) => {
         </div>
         <div className="flex flex-row justify-start items-start mt-12">
           {device() === "ios" && <DownloadIOS location="body" />}
-          {device() === "android" && <DownloadAndroid />}
+          {device() === "android" && <DownloadAndroid location="body" />}
           {device() === "desktop" && (
             <>
               <div className="grow-0">
-                <DownloadIOS className="mr-8" />
+                <DownloadIOS className="mr-8" location="body" />
               </div>
               <div className="grow-0">
-                <DownloadAndroid />
+                <DownloadAndroid location="body" />
               </div>
             </>
           )}

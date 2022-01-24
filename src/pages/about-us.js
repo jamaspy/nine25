@@ -70,54 +70,54 @@ const AboutUs = () => {
         <div className="container py-12 grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto">
           <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
-              <p className="text-2xl font-bold mb-4">Be responsible</p>
+              <p className="text-2xl font-bold mb-4">Be Responsible</p>
               <p className="mb-2 text-lg">
-                We dont believe in profiteering at all costs and that financial
-                freedom is possible for everyone. We are definitely not about
-                young adults being shoved toward a lifetime of debt and
-                repayments.
+                We don’t believe in profiteering at all costs and we are
+                definitely not about young adults being shoved toward a lifetime
+                of debt and repayments. We believe financial freedom is
+                reachable for everyone and we are building the technology to
+                help you snatch it.
               </p>
             </div>
             <Responsible />
           </div>
           <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
-              <p className="text-2xl font-bold mb-4">Drive positive outcomes</p>
+              <p className="text-2xl font-bold mb-4">Drive Positive Outcomes</p>
               <p className="mb-2 text-lg">
-                This is why we do what we do. At heart of every decision freedom
-                is possible for every at all costs and we definitely not about
-                young adults being shoved toward a lifetime of debt and
-                repayments.
+                This is why we do what we do! At the heart of every decision we
+                make, now and in the future, are our Nine25er's and the world's
+                wellbeing.
               </p>
               <p className="mb-2 text-lg">
-                From the logic profiteering at all costs and we definitely not
-                about young adults being shoved toward a lifetime of debt and
-                repayments.
+                From the logic that powers our money management algorithm to our
+                Nine25er's spending sustainably. We at Nine25 want to ensure a
+                positive impact for our users, stakeholders, employees and the
+                planet.
               </p>
             </div>
             <Positive />
           </div>
           <div className="border flex flex-col items-end justify-between rounded-3xl bg-white shadow overflow-hidden">
             <div className="p-4">
-              <p className="text-2xl font-bold mb-4">We keep it simple</p>
+              <p className="text-2xl font-bold mb-4">We Keep It Simple</p>
               <p className="mb-2 text-lg">
-                This is why we do what we do.At heart of every dicision freedom
-                is possible for every at all costs and we definitely not about
-                young adults being shoved toward a lifetime of debt and
-                repayments.
+                We make finances manageable to the everyday person. With a
+                seamless integration into your lifestyle, Nine25 does all the
+                heavy lifting for you (but not at the gym - thats all you).
               </p>
             </div>
             <Simple />
           </div>
           <div className="flex flex-col justify-between rounded-3xl bg-white shadow">
             <div className="p-4">
-              <p className="text-2xl font-bold mb-4">Don't be a d*ckhead</p>
+              <p className="text-2xl font-bold mb-4">Don't Be A D*ckhead</p>
               <p className="mb-2 text-lg">
-                Just some advice on how to be a better human.
+                Simple advice on how to be a better human.
               </p>
               <p className="mb-2 text-lg">
-                The world already has enough of them - embrace individuality and
-                don’t be one.
+                The world already has enough of them - embrace individuality by
+                not being one.
               </p>
             </div>
             <DHead />

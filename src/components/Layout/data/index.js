@@ -1,6 +1,6 @@
 export const company_footer_links = [
-  { label: "About", to: "/aboutus" },
-  { label: "Contact us", to: "/contactus" },
+  { label: "About", to: "/about-us" },
+  { label: "Contact us", to: "/contact-us" },
 ];
 
 export const discovery_footer_links = [
