@@ -67,11 +67,11 @@ const MeetTeam = () => {
       image: allImageData.find((image) => image.name === "team_prashant"),
       tag: "The dude abides",
     },
-    {
-      name: "Michael Yao",
-      image: allImageData.find((image) => image.name === "team_michael"),
-      tag: "Say 'what' again, I dare you",
-    },
+    // {
+    //   name: "Michael Yao",
+    //   image: allImageData.find((image) => image.name === "team_michael"),
+    //   tag: "Say 'what' again, I dare you",
+    // },
     {
       name: "Shayne de Groot",
       image: allImageData.find((image) => image.name === "team_shayne"),

@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 
-import AppleQR from "../../assets/apple_QR.svg";
+import AppleQR from "../../images/appleqrcode.png";
 import AppleLogo from "../../images/AppStore.png";
-import AndroidQR from "../../assets/android_QR.svg";
+import AndroidQR from "../../images/androidqrcode.png";
 import AndroidLogo from "../../images/GooglePlay.png";
 import { CgClose } from "react-icons/cg";
 import ModalBg from "../../assets/modal_bg.svg";
@@ -56,20 +56,20 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
               tabIndex={-1}
               onKeyDown={() => {
                 navigator.clipboard.writeText(
-                  "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
+                  "https://apps.apple.com/au/app/nine25-app/id1540723857?utm_source=QRcode&utm_medium=website&utm_id=QRcode"
                 );
                 setIosCopied(true);
               }}
               onClick={() => {
                 navigator.clipboard.writeText(
-                  "https://apps.apple.com/app/apple-store/id1540723857?pt=122259206&ct=website-header&mt=8"
+                  "https://apps.apple.com/au/app/nine25-app/id1540723857?utm_source=QRcode&utm_medium=website&utm_id=QRcode"
                 );
                 setIosCopied(true);
               }}
               className="flex flex-col items-center justify-center mr-2"
             >
-              <img width={100} src={AppleLogo} alt="Android Logo" />
-              <AppleQR />
+              <img width={100} src={AppleLogo} alt="Apple Logo" />
+              <img src={AppleQR} alt="Download on iTunes QR Code" width="150" />
               <div
                 className={`transition ease-in-out duration-150 flex flex-row items-center justify-center ${
                   iosCopied
@@ -81,18 +81,26 @@ const DownloadModal = ({ zIndex, blurLevel }) => {
                 <p>{iosCopied ? "link copied" : "copy link"}</p>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center ml-2">
+            <div className="flex flex-col items-center justify-center ml-8">
               <img width={100} src={AndroidLogo} alt="Android Logo" />
-              <AndroidQR />
+              <img
+                src={AndroidQR}
+                alt="Download on PLay Store QR Code"
+                width="151"
+              />
               <div
                 role="button"
                 tabIndex={-2}
                 onKeyDown={() => {
-                  navigator.clipboard.writeText("ANDROID LINK HERE");
+                  navigator.clipboard.writeText(
+                    "https://play.google.com/store/apps/details?id=au.com.nine25.app&referrer=utm_source%3DQRcode%26utm_medium%3DQRcode"
+                  );
                   return setAndroidCopied(true);
                 }}
                 onClick={() => {
-                  navigator.clipboard.writeText("ANDROID LINK HERE");
+                  navigator.clipboard.writeText(
+                    "https://play.google.com/store/apps/details?id=au.com.nine25.app&referrer=utm_source%3DQRcode%26utm_medium%3DQRcode"
+                  );
                   return setAndroidCopied(true);
                 }}
                 className={`transition ease-in-out duration-150 flex flex-row items-center justify-center ${
