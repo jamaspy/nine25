@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.nine25.app",
     title: "nine25",
     description: "The smartest way to spend, manage & invest your salary.",
     author: "nine25",
@@ -12,6 +12,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-netlify`,
     {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
