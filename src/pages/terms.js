@@ -698,6 +698,97 @@ const aboutus = () => {
           Terms if such delay is due to any circumstance beyond our reasonable
           control.
         </p>
+        <p className="mb-4">
+          <span className="font-bold">Governing law: </span> These Terms are
+          governed by the laws of New South Wales, Australia. Each Party
+          irrevocably and unconditionally submits to the exclusive jurisdiction
+          of the courts operating in New South Wales, Australia and any courts
+          entitled to hear appeals from those courts and waives any right to
+          object to proceedings being brought in those courts.
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Notices: </span> Any notice given under
+          these Terms must be in writing addressed to us at the address at the
+          end of these Terms or to you at the address in your Account. Any
+          notice may be sent by standard post or email, and will be deemed to
+          have been served on the expiry of 48 hours in the case of post, or at
+          the time of transmission in the case of transmission by email and for
+          in-App communications, at the time you receive the in-App
+          communication
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Relationship of Parties: </span> These
+          Terms are not intended to create a partnership, joint venture,
+          employment or agency relationship between the Parties. We do not act
+          as an escrow agent in relation to your funds held by Assembly, or
+          guarantee or assume responsibility for your Pay, or collect or receive
+          your Pay on your behalf.
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Severance: </span> If a provision of these
+          Terms is held to be void, invalid, illegal or unenforceable, that
+          provision is to be read down as narrowly as necessary to allow it to
+          be valid or enforceable, failing which, that provision (or that part
+          of that provision) will be severed from these Terms without affecting
+          the validity or enforceability of the remainder of that provision or
+          the other provisions in these Terms.
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Third party sites: </span> The App may
+          contain links to websites operated by third parties. Unless we tell
+          you otherwise, we do not control, endorse or approve, and are not
+          responsible for, the content on those websites. We recommend that you
+          make your own investigations with respect to the suitability of those
+          websites. If you purchase goods or services from a third party website
+          linked from the Nine25 App, such third party provides the goods and
+          services to you, not us. We may receive a benefit (which may include a
+          referral fee or a commission) should you visit certain third-party
+          websites via a link on the Nine25 App (Affiliate Link) or for
+          featuring certain products or services on the Nine25 App. We will make
+          it clear by notice to you which (if any) products or services we
+          receive a benefit to feature on the Nine25 App, or which (if any)
+          third party links are Affiliate Links.
+        </p>
+        <p className="my-4 font-bold">20. Contact us</p>
+        <p className="mb-4">
+          If you would like to contact us, you can email us at help@nine25.app
+          or use the contact form on our Website or mail to us at Level 20/171
+          Sussex Street, Sydney NSW 2000.
+        </p>
+        <p className="my-4 font-bold">21. Definitions</p>
+        <p className="mb-4">
+          <span className="font-bold">Consequential Loss</span> means any loss,
+          damage or costs incurred by you that is indirect or consequential, as
+          well as loss of revenue; loss of income; loss of business; loss of
+          profits; loss of production; loss of or damage to goodwill or credit;
+          loss of business reputation, future reputation or publicity; loss of
+          use; loss of interest; losses arising from claims by third parties;
+          loss of or damage to credit rating; loss of anticipated savings and/or
+          loss or denial of opportunity.
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Liability</span> means any expense, cost,
+          liability, loss, damage, claim, notice, entitlement, investigation,
+          demand, proceeding or judgment (whether under statute, contract,
+          equity, tort (including negligence), indemnity or otherwise),
+          howsoever arising, whether direct or indirect and/or whether present,
+          unascertained, future or contingent and whether involving a third
+          party or a party to these Terms or otherwise
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Pay</span> means the amount of credit
+          requested by you which may be adjusted or rejected by us at our
+          discretion.
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Nine25 Account</span> means the digital
+          e-wallet for your Account which sets out your Available Balance
+        </p>
+        <p className="mb-4">
+          <span className="font-bold">Website</span> means https://nine25.app/
+        </p>
+
+        <p className="my-4 font-bold text-xl">Last update: 20 December 2021</p>
       </div>
       <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
         <div className="container rounded-3xl bg-white shadow-sm p-12">
