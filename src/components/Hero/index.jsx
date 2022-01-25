@@ -5,6 +5,7 @@ import HeroSVG from "../../assets/hero.svg";
 import HeroMobileSVG from "../../assets/hero_mobile.svg";
 import HeroTabletSVG from "../../assets/hero_tablet.svg";
 import StarSVG from "../../assets/yellow_star.svg";
+import StarSVGTablet from "../../assets/yellow_star_tablet.svg";
 import DownloadModal from "../DownloadModal";
 import Typical from "./Typing";
 const index = ({ device }) => {
@@ -12,7 +13,7 @@ const index = ({ device }) => {
     <div className="flex flex-col flex-grow-0 flex-shrink mt-12 md:flex-row md:justify-between relative overflow-hidden">
       <DownloadModal />
 
-      <div className="lg:pl-24 xl:mt-32 border pl-4">
+      <div className="lg:pl-24 xl:mt-32 pl-4">
         <p className="text-4xl md:text-6xl font-black text-center md:text-left">
           Now Streaming:
         </p>
@@ -59,8 +60,11 @@ const index = ({ device }) => {
           )}
         </div>
       </div>
-      <div className=" absolute lg:-bottom-20 left-0 hidden lg:block">
+      <div className=" absolute lg:-bottom-20 left-0 hidden lg:block -z-20">
         <StarSVG />
+      </div>
+      <div className=" absolute md:-bottom-20 left-0 hidden md:block -z-20">
+        <StarSVGTablet />
       </div>
 
       <div className="flex md:hidden flex-shrink items-center">
