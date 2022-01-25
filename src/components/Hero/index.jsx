@@ -12,17 +12,17 @@ const index = ({ device }) => {
     <div className="flex flex-col flex-grow-0 flex-shrink mt-12 md:flex-row md:justify-between relative overflow-hidden">
       <DownloadModal />
 
-      <div className="px-2 ">
-        <p className="text-4xl md:text-5xl font-black text-center md:text-left">
+      <div className="lg:pl-24 xl:mt-32 border pl-4">
+        <p className="text-4xl md:text-6xl font-black text-center md:text-left">
           Now Streaming:
         </p>
         <p
-          className="text-4xl md:text-5xl font-bold my-2 text-center md:text-left"
+          className="text-4xl md:text-5xl lg:text-6xl font-bold my-2 text-center md:text-left"
           style={radialFill}
         >
           Your salary.
         </p>
-        <div className="overflow-hidden flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start mt-4 text-xl text-center md:text-left px-4 md:p-0 ">
+        <div className="overflow-hidden flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start mt-8 text-xl text-center md:text-left px-4 md:p-0 ">
           <p>The</p>{" "}
           <span className="bg-primary mx-1">
             <Typical
@@ -38,8 +38,12 @@ const index = ({ device }) => {
               wrapper="p"
             />
           </span>
-          <p className="">way to spend, manage & invest your salary.</p>
+          way to spend,
         </div>
+        <p className="text-xl text-center md:text-left">
+          {" "}
+          manage & invest your salary.
+        </p>
         <div className="flex flex-row justify-start items-start mt-12">
           {device() === "ios" && <DownloadIOS location="body" />}
           {device() === "android" && <DownloadAndroid location="body" />}

@@ -9,6 +9,7 @@ const HomeBenefits = ({ children }) => {
           key={index}
           index={index}
           title={benefit.title}
+          subtitle={benefit.subtitle}
           paragraphs={benefit.paragraphs}
           isWide={benefit.isWide}
           isComingSoon={benefit.isComingSoon}
