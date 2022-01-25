@@ -2,7 +2,6 @@ import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import {
   PrimaryButton,
-  SecondaryButton,
   MobileSecondaryButton,
   MobilePrimaryButton,
 } from "../../components/Buttons";
@@ -29,7 +28,7 @@ const TopBox = () => {
             Improving the financial health of your employees starts today
           </p>
           <div className="hidden md:flex md:flex-row justify-center items-center lg:mt-20 w-full">
-            <SecondaryButton text="Get Started" className="mr-8" />
+            {/* <SecondaryButton text="Get Started" className="mr-8" /> */}
             <PrimaryButton text="Schedule a Meeting" />
           </div>
         </div>

@@ -12,7 +12,7 @@ const Menu = () => {
           className="text-xl leading-relaxed inline-block mr-4 py-2 whitespace-nowrap  "
           to="/"
         >
-          <LogoSVG style={{ width: "50%" }} />
+          <LogoSVG style={{ maxWidth: "200px" }} />
         </Link>
         <div className=" flex flex-row">
           <Link
