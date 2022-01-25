@@ -14,11 +14,11 @@ const index = ({ device }) => {
       <DownloadModal />
 
       <div className="lg:pl-24 xl:mt-32 pl-4">
-        <p className="text-4xl md:text-6xl font-black text-center md:text-left">
+        <p className="text-4xl md:text-4xl lg:text-6xl font-black text-center md:text-left">
           Now Streaming:
         </p>
         <p
-          className="text-4xl md:text-5xl lg:text-6xl font-bold my-2 text-center md:text-left"
+          className="text-4xl md:text-4xl lg:text-6xl font-bold my-2 text-center md:text-left"
           style={radialFill}
         >
           Your salary.
@@ -46,8 +46,16 @@ const index = ({ device }) => {
           manage & invest your salary.
         </p>
         <div className="flex flex-row justify-start items-start mt-12">
-          {device() === "ios" && <DownloadIOS location="body" />}
-          {device() === "android" && <DownloadAndroid location="body" />}
+          {device() === "ios" && (
+            <div className="grow-0 mx-auto mb-4">
+              <DownloadIOS location="body" />
+            </div>
+          )}
+          {device() === "android" && (
+            <div className="grow-0">
+              <DownloadAndroid location="body" />
+            </div>
+          )}
           {device() === "desktop" && (
             <>
               <div className="grow-0">
@@ -70,7 +78,7 @@ const index = ({ device }) => {
       <div className="flex md:hidden flex-shrink items-center">
         <HeroSVG />
       </div>
-      <div className="hidden md:flex xl:hidden flex-shrink items-end mt-36">
+      <div className="hidden md:flex xl:hidden flex-shrink items-end mt-20">
         <HeroTabletSVG />
       </div>
       <div className="hidden xl:flex flex-shrink items-end justify-end">
