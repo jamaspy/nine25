@@ -27,22 +27,24 @@ const AboutUs = () => {
           month. At Nine25, we're upending this old world relic with our
           real-time salarystreaming service.
         </p>
-        <div
-          className="mx-auto  rounded-lg shadow my-12 "
-          style={{
-            background:
-              "linear-gradient(144.21deg, #6C39FE 4.6%, #4100FB 70.53%)",
-          }}
-        >
-          <StaticImage
-            src="../images/team_final.png"
-            alt="about us"
-            layout="constrained"
-            width={845}
-            placeholder="blurred"
-            quality={100}
-          />
-        </div>
+      </div>
+      <div
+        className="mx-auto rounded-lg shadow my-12 xl:max-w-4xl md:max-w-2xl max-w-sm flex items-center justify-center"
+        style={{
+          background:
+            "linear-gradient(144.21deg, #6C39FE 4.6%, #4100FB 70.53%)",
+        }}
+      >
+        <StaticImage
+          src="../images/team_final.png"
+          alt="about us"
+          layout="constrained"
+          width={845}
+          placeholder="blurred"
+          quality={100}
+        />
+      </div>
+      <div className="lg:w-1/2 w-3/4 mx-auto px-4">
         <p className="lg:text-4xl md:text-3xl text-2xl font-bold mb-4">
           Our Mission
         </p>

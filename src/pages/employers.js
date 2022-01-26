@@ -20,11 +20,11 @@ const aboutus = () => {
         currentLabel="For Employers"
       />
       <div className=" flex flex-col items-center justify-center bg-gray-lighter px-2 lg:px-0">
-        <div className="container mb-12 h-full">
+        <div className="container lg:mb-12 h-full">
           <TopBox />
         </div>
-        <div className="lg:w-1/2">
-          <p className="lg:text-5xl md:text-4xl text-3xl font-bold text-center my-8 px-2 lg:leading-relaxed">
+        <div className="px-4">
+          <p className="lg:text-6xl text-4xl font-bold text-center mb-8 px-2 lg:leading-relaxed">
             Why incorporate Nine25’s salary streaming technology into your
             business?
           </p>
@@ -98,24 +98,26 @@ const aboutus = () => {
           </div>
         </div>
         <div className="w-full bg-white mt-12 pb-12 text-center">
-          <p className="text-4xl font-bold text-center my-8">What we offer</p>
+          <p className="lg:text-6xl text-5xl font-bold text-center my-8">
+            What we offer
+          </p>
           <div className="w-full flex flex-col md:flex-row justify-around">
-            <div className="flex flex-col items-center justify-center mb-8">
+            <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Health />
-              <p className="font-semibold text-xl mt-4">
+              <p className="font-bold text-xl lg:text-3xl mt-4">
                 Financial Health & Responsible Money Management App
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center mb-8">
+            <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Debit />
-              <p className="font-semibold text-xl mt-4">
+              <p className="font-bold text-xl lg:text-3xl mt-4">
                 Real Time Salary Streaming & Debit Card
               </p>
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center max-w-xs mx-auto">
             <Analytics />
-            <p className="font-semibold text-xl mt-4">
+            <p className="font-bold text-xl lg:text-3xl mt-4">
               Personalised analytics & reporting
             </p>
           </div>
