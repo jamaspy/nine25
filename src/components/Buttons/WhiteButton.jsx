@@ -7,7 +7,7 @@ const WhiteButton = ({ className, text }) => {
       aria-label="Download App"
       onClick={() => dispatch({ type: "SHOW_MODAL" })}
       onKeyDown={() => dispatch({ type: "SHOW_MODAL" })}
-      className={`bg-white hover:bg-gray-light transition ease-in-out duration-200 text-white rounded-full px-8 py-3 flex items-center justify-center cursor-pointer ${className}`}
+      className={`bg-white hover:bg-gray-light transition ease-in-out duration-200 text-white rounded-full py-4 flex items-center justify-center cursor-pointer ${className} w-72`}
     >
       <p className="text-blacked">{text}</p>
     </button>

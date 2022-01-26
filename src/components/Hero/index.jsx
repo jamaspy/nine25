@@ -52,7 +52,7 @@ const index = ({ device }) => {
             </div>
           )}
           {device() === "android" && (
-            <div className="grow-0">
+            <div className="grow-0 mx-auto mb-4">
               <DownloadAndroid location="body" />
             </div>
           )}

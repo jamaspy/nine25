@@ -43,7 +43,7 @@ const renderTitle = (platform) => {
 
 const Socials = ({ classes }) => {
   return (
-    <div className="w-full flex lg:flex-col items-center justify-center lg:mt-2 mt-8 mb-4">
+    <div className="w-full flex lg:flex-col items-center justify-around lg:mt-2 mt-8 mb-4">
       {socialPlatofrms.map(({ platform, link }) => (
         <div className="mx-auto flex flex-row justify-center xl:justify-start items-center w-full">
           <div
