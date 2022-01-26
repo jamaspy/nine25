@@ -14,7 +14,7 @@ const AboutUs = () => {
     <Layout device={checkDevice}>
       <Seo title="About Us" />
       <Breadcrumbs rootLabel="Home" rootRoute="/" currentLabel="About Us" />
-      <div className="lg:w-1/2 w-3/4 mx-auto px-4">
+      <div className="lg:w-1/2  mx-auto px-4">
         <p className="lg:text-4xl md:text-3xl text-2xl font-bold mb-4">
           Our Story
         </p>
@@ -44,9 +44,9 @@ const AboutUs = () => {
           quality={100}
         />
       </div>
-      <div className="lg:w-1/2 w-3/4 mx-auto px-4">
-        <p className="lg:text-4xl md:text-3xl text-2xl font-bold mb-4">
-          Our Mission
+      <div className="lg:w-1/2 mx-auto px-4">
+        <p className="lg:text-5xl md:text-4xl text-3xl font-bold mb-4">
+          Our mission
         </p>
         <p className="mb-12 text-lg">
           Technology is progressing at a rapid rate and our lifestyles are
@@ -65,7 +65,7 @@ const AboutUs = () => {
       </div>
       <div className=" bg-gray-lighter px-4 pt-12">
         <div className="container mx-auto">
-          <p className="lg:text-4xl md:text-3xl text-2xl font-bold">
+          <p className="lg:text-5xl md:text-4xl text-3xl font-bold">
             Our values
           </p>
         </div>
@@ -127,6 +127,9 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="container bg-white mx-auto py-12 px-4 lg:px-0">
+        <p className="lg:text-5xl md:text-4xl text-3xl font-bold mb-4 text-center">
+          Meet our team
+        </p>
         <MeetTeam />
       </div>
     </Layout>

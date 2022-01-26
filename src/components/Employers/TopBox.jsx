@@ -1,10 +1,6 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import {
-  PrimaryButton,
-  MobileSecondaryButton,
-  MobilePrimaryButton,
-} from "../../components/Buttons";
+import { PrimaryButton, MobilePrimaryButton } from "../../components/Buttons";
 
 import WebBG from "./BgImg";
 import MobBG from "./MobBgImage";
@@ -18,7 +14,7 @@ const TopBox = () => {
         className="hidden md:hidden mt-12 mx-2 container lg:flex items-center justify-center"
         style={{
           backgroundImage: `url("data:image/svg+xml,${webSVGString}")`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "700px",
         }}
@@ -38,7 +34,7 @@ const TopBox = () => {
         className="hidden md:flex mt-12 mx-2 container lg:hidden items-center justify-center w-full"
         style={{
           backgroundImage: `url("data:image/svg+xml,${webSVGString}")`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "500px",
         }}
@@ -58,7 +54,7 @@ const TopBox = () => {
         className="flex md:hidden lg:hidden mt-12 container items-center justify-center "
         style={{
           backgroundImage: `url("data:image/svg+xml,${mobileSVGString}")`,
-          backgroundSize: "100% 100%",
+          backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "700px",
         }}
