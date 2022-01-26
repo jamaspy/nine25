@@ -24,22 +24,6 @@ const renderIcon = (platform) => {
       return null;
   }
 };
-const renderTitle = (platform) => {
-  switch (platform) {
-    case "instagram":
-      return "Instagram";
-    case "facebook":
-      return "Facebook";
-    case "twitter":
-      return "Twitter";
-    case "tiktok":
-      return "TikTok";
-    case "linkedin":
-      return "LinkedIn";
-    default:
-      return null;
-  }
-};
 
 const Socials = ({ classes }) => {
   return (
