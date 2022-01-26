@@ -102,20 +102,20 @@ const aboutus = () => {
             What we offer
           </p>
           <div className="w-full flex flex-col md:flex-row justify-around">
-            <div className="border flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
+            <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Health />
               <p className="font-bold text-xl lg:text-3xl mt-4">
                 Financial Health & Responsible Money Management App
               </p>
             </div>
-            <div className="border flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
+            <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Debit />
               <p className="font-bold text-xl lg:text-3xl mt-4">
                 Real Time Salary Streaming & Debit Card
               </p>
             </div>
           </div>
-          <div className="border flex flex-col items-center justify-center max-w-xs mx-auto">
+          <div className="flex flex-col items-center justify-center max-w-xs mx-auto">
             <Analytics />
             <p className="font-bold text-xl lg:text-3xl mt-4">
               Personalised analytics & reporting
