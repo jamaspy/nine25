@@ -113,12 +113,12 @@ const ContactForm = ({ heading, pageTitle }) => {
           </div>
           <label
             htmlFor="consent"
-            class="text-xs text-blacked mt-2 inline md:mt-0"
+            class="text-lg font-normal text-blacked mt-2 inline md:mt-0"
           >
             I want to get updates & offers
           </label>
         </div>
-        <div className="w-full flex flex-col items-center justify-center mt-8">
+        <div className="w-full flex flex-col items-center justify-center mt-12 mb-24">
           <SendButton
             type="submit"
             label={`${state?.succeeded ? "Sent" : "Send"}`}

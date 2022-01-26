@@ -15,7 +15,7 @@ const Links = () => {
     <>
       <div className="w-full lg:flex flex-row justify-around items-start hidden">
         <div className="flex flex-col">
-          <p className="font-semibold text-sm mb-1">Company</p>
+          <p className="font-semibold text-lg mb-3">Company</p>
           {company_footer_links.map((link, index) => (
             <FooterLink label={link.label} to={link.to} key={index} />
           ))}
@@ -27,13 +27,13 @@ const Links = () => {
           ))}
         </div> */}
         <div className="flex flex-col ">
-          <p className="font-semibold text-sm mb-1">Legal</p>
+          <p className="font-semibold text-lg mb-3">Legal</p>
           {legal_footer_links.map((link, index) => (
             <FooterLink label={link.label} to={link.to} key={index} />
           ))}
         </div>
         <div className="hidden lg:inline-block">
-          <p className="font-semibold text-sm mb-1">Social</p>
+          <p className="font-semibold text-lg mb-3">Social</p>
           <Socials />
         </div>
       </div>

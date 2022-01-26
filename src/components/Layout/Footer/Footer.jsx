@@ -18,7 +18,7 @@ const Footer = ({ device }) => {
           <FooterLogoLarge className="z-10 lg:hidden inline-block" />
         </div>
         <div className="flex justify-center flex-col">
-          <p className="text-xl text-center font-semibold">
+          <p className="text-2xl text-center font-semibold">
             Start Streaming Now
           </p>
           <div className="my-8  w-full">
@@ -33,7 +33,7 @@ const Footer = ({ device }) => {
             <img src={LargeFooterLogo} alt="nine25 footer logo large" />
             <Disclaimer />
             <div className="">
-              <p className="text-xl text-center lg:text-left font-semibold">
+              <p className="text-2xl text-center lg:text-left font-semibold">
                 Start Streaming Now
               </p>
               <div className="my-8">

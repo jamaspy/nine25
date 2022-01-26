@@ -24,38 +24,24 @@ const renderIcon = (platform) => {
       return null;
   }
 };
-const renderTitle = (platform) => {
-  switch (platform) {
-    case "instagram":
-      return "Instagram";
-    case "facebook":
-      return "Facebook";
-    case "twitter":
-      return "Twitter";
-    case "tiktok":
-      return "TikTok";
-    case "linkedin":
-      return "LinkedIn";
-    default:
-      return null;
-  }
-};
 
 const Socials = ({ classes }) => {
   return (
-    <div className="w-full flex lg:flex-col items-center justify-around lg:mt-2 mt-8 mb-4">
+    <div className="w-full flex lg:flex-col items-center justify-center lg:mt-2 mt-8 mb-4">
       {socialPlatofrms.map(({ platform, link }) => (
-        <div className="mx-auto flex flex-row justify-center xl:justify-start items-center w-full">
+        <div className="mx-2 xl:mx-0 flex flex-row justify-center md:justify-center xl:justify-start items-center">
           <div
             key={platform}
-            className="w-8 h-8 cursor-pointer bg-gray-dark rounded-full flex items-center justify-center mx-2 lg:my-2"
+            className="lg:w-10 lg:h-10 md:w-14 md:h-14 w-10 h-10 cursor-pointer bg-gray-dark rounded-full flex items-center justify-center mr-2 lg:my-2"
           >
-            <a href={link} target="_blank" rel="noreferrer noopener">
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="md:text-2xl lg:text-xl"
+            >
               {renderIcon(platform)}
             </a>
-          </div>
-          <div className="hidden xl:inline text-left cursor-pointer">
-            <p className="">{renderTitle(platform)}</p>
           </div>
         </div>
       ))}
