@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "../components/Layout";
-import ContactForm from "../components/Form";
+
 import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 import { Breadcrumbs } from "../components/Layout";
@@ -171,14 +171,14 @@ const aboutus = () => {
           Personal Information at your own risk.
         </p>
       </div>
-      <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
+      {/* <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
         <div className="container rounded-xl bg-white shadow-sm p-12">
           <ContactForm
             heading="Still have questions? Please, contact us"
             pageTitle="Privacy Policy"
           />
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };

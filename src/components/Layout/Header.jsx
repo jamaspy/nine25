@@ -27,7 +27,7 @@ const Menu = () => {
         <div className=" flex flex-row">
           <Link
             to="/employers"
-            className="pr-6 pl-3 py-2 flex items-center text-md lg:text-xl font-bold leading-snug  text-blacked hover:text-hover-blue hover:underline z-10"
+            className="pr-6 pl-3 py-2 flex items-center text-base lg:text-xl font-bold leading-snug  text-blacked hover:text-hover-blue hover:underline z-10"
           >
             For Employers
           </Link>

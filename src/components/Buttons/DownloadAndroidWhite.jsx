@@ -11,7 +11,7 @@ const DownloadAndroidWhite = ({ className, location }) => {
             `https://play.google.com/store/apps/details?id=au.com.nine25.app&referrer=utm_source%3Dwebsite%26utm_medium%3D${location}`
           );
       }}
-      className={`bg-white text-black border rounded-full flex items-center justify-center hover:cursor-pointer ${className} mx-auto w-72 z-10`}
+      className={`bg-white text-black border rounded-full flex items-center justify-center hover:cursor-pointer ${className} xl:mx-auto w-72 z-10`}
     >
       <PlaySVG />
     </button>

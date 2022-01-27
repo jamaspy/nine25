@@ -19,14 +19,14 @@ const aboutus = () => {
         rootRoute="/"
         currentLabel="For Employers"
       />
-      <div className=" flex flex-col items-center justify-center bg-gray-lighter">
+      <div className="flex flex-col items-center justify-center bg-gray-lighter">
         <div className="container lg:mb-12 h-full">
           <TopBox />
         </div>
-        <div className="px-4">
-          <p className="lg:text-6xl text-4xl font-bold text-center my-8 px-2 lg:leading-relaxed">
+        <div className="md:px-4 px-3">
+          <p className="lg:text-6xl text-4xl font-bold text-left md:text-center my-8 lg:leading-relaxed">
             Why incorporate Nine25’s salary streaming technology into your
-            business?
+            business?asdasdas
           </p>
         </div>
         <div className="container grid gap-8 grid-cols-1 md:grid-cols-2 px-2">

@@ -11,7 +11,7 @@ const DownloadIOSWhite = ({ className, location }) => {
           );
       }}
       style={{ minHeight: 65 }}
-      className={`bg-white text-black border rounded-full  flex items-center justify-center hover:cursor-pointer ${className} mx-auto w-72`}
+      className={`bg-white text-black border rounded-full flex items-center justify-center hover:cursor-pointer ${className} w-72`}
     >
       <ITunesSVG />
     </button>

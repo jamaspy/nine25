@@ -10,7 +10,7 @@ const DownloadBlueButton = ({ className, text }) => {
       className={`bg-secondary hover:bg-secondary-hover transition ease-in-out duration-200 text-white rounded-full px-8 py-4 flex items-center justify-center cursor-pointer ${className} w-64 lg:w-80`}
       // style={{ minWidth: 305, minHeight: 65 }}
     >
-      <p className="text-tertiary font-xl font-bold">{text}</p>
+      <p className="text-tertiary lg:text-xl md:text-base font-bold">{text}</p>
     </button>
   );
 };
