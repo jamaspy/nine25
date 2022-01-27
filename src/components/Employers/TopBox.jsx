@@ -1,6 +1,5 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { PrimaryButton, MobilePrimaryButton } from "../../components/Buttons";
 
 import WebBG from "./BgImg";
 import MobBG from "./MobBgImage";
