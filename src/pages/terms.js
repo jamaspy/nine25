@@ -1,6 +1,6 @@
 import React from "react";
 import { Layout } from "../components/Layout";
-import ContactForm from "../components/Form";
+
 import Seo from "../components/SEO";
 import { checkDevice } from "../utils";
 import { Breadcrumbs } from "../components/Layout";
@@ -790,14 +790,15 @@ const aboutus = () => {
 
         <p className="my-4 font-bold text-xl">Last update: 20 December 2021</p>
       </div>
-      <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
+
+      {/* <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
         <div className="container rounded-3xl bg-white shadow-sm p-12">
           <ContactForm
             heading="Still have questions? Please, contact us"
             pageTitle="Term of Service"
           />
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };
