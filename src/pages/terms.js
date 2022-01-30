@@ -14,9 +14,9 @@ const aboutus = () => {
         currentLabel="Terms of Service"
       />
       <div className="container m-auto px-8 md:px-36">
-        <p className="text-2xl font-semibold">Terms of service</p>
+        <p className="text-5xl font-semibold">Terms of service</p>
 
-        <p className="text-xl font-medium mt-8 mb-4">Welcome</p>
+        <p className="text-3xl font-medium mt-8 mb-4">Welcome</p>
         <p className="mb-4">Welcome to Livin' On The Stream™!</p>
         <p className="mb-4">
           The Nine25 App grants you the ability to stream - spend, manage,
@@ -27,7 +27,7 @@ const aboutus = () => {
           the same page.
         </p>
         <div className="border p-2">
-          <p className="text-xl font-medium mb-4">Key Terms</p>
+          <p className="text-3xl font-medium mb-4">Key Terms</p>
           <p className="mb-4">
             Our complete terms and conditions are contained below, but some
             important points for you to know before you start using our Nine25
@@ -64,7 +64,7 @@ const aboutus = () => {
             Consumer Law.
           </p>
         </div>
-        <p className="my-4 font-bold">1. Introduction</p>
+        <p className="text-3xl my-4 font-bold">1. Introduction</p>
         <p className="mb-4">
           These terms and conditions (Terms) are entered into between you and
           Nine25 Pty Ltd (ABN 26 644 914 625) (we, us or our), together the
@@ -91,7 +91,7 @@ const aboutus = () => {
             You may only use the Nine25 App if you are least 16 years of age.
           </li>
         </ul>
-        <p className="my-4 font-bold">2. Acceptance</p>
+        <p className="text-3xl my-4 font-bold">2. Acceptance</p>
         <p className="mb-4">
           By creating an account on the Nine25 App, you accept and agree to
           comply with the Terms, and acknowledge that we [are a credit provider
@@ -155,7 +155,7 @@ const aboutus = () => {
           </li>
         </ul>
 
-        <p className="my-4 font-bold">3. Privacy</p>
+        <p className="text-3xl my-4 font-bold">3. Privacy</p>
         <p className="mb-4">
           We will handle your Personal Information in accordance with our
           Privacy Policy.
@@ -165,12 +165,12 @@ const aboutus = () => {
           and disclosure of your Personal Information as set out in the Privacy
           Policy and these Terms.
         </p>
-        <p className="my-4 font-bold">4. Communications</p>
+        <p className="text-3xl my-4 font-bold">4. Communications</p>
         <p className="mb-4">
           We may contact you via the Nine25 App using in-Account notifications
           or via phone call, text message or email.
         </p>
-        <p className="my-4 font-bold">5. Your Account</p>
+        <p className="text-3xl my-4 font-bold">5. Your Account</p>
         <p className="my-4 font-bold">5.1 Open your acount</p>
         <p className="mb-4">
           You may register and create an account (Account) by following the
@@ -235,7 +235,7 @@ const aboutus = () => {
           Your Nine25 Account is the digital e-wallet for your Account which
           displays your Available Balance.
         </p>
-        <p className="my-4 font-bold">6. Your Account</p>
+        <p className="text-3xl my-4 font-bold">6. Your Pay</p>
         <p className="my-4 font-bold">6.1 Accessing your Pay</p>
         <p className="mb-4">
           You may request us to provide you with your Pay as enabled or as
@@ -296,14 +296,14 @@ const aboutus = () => {
           your Account as a payment method. You can also manually make payments
           into your Nine25 Account by bank transfer.
         </p>
-        <p className="my-4 font-bold">7. Promotions</p>
+        <p className="text-3xl my-4 font-bold">7. Promotions</p>
         <p className="mb-4">
           We may run promotions on the Nine25 App which will be governed by
           their own terms and conditions as set out in the Nine25 App. If there
           is any inconsistency between those terms and conditions and these
           Terms, these Terms apply.
         </p>
-        <p className="my-4 font-bold">8. Your Nine25 Account</p>
+        <p className="text-3xl my-4 font-bold">8. Your Nine25 Account</p>
         <p className="mb-4 font-bold">8.1 Nine25 Account Funds</p>
         <ul className="mb-4">
           <li className="mb-2">
@@ -354,20 +354,20 @@ const aboutus = () => {
           Available Balance, at any time using the methods set out in the Nine25
           App.
         </p>
-        <p className="my-4 font-bold">9. Features</p>
+        <p className="text-3xl my-4 font-bold">9. Features</p>
         <p className="mb-4">
           We provide a range of features and services to you in the Nine25 App.
           You may select and change certain features associated with your
           Account in the Nine25 App at any time and we will make the selected
           changes to your Account shortly afterwards.
         </p>
-        <p className="my-4 font-bold">10. Complaints</p>
+        <p className="text-3xl my-4 font-bold">10. Complaints</p>
         <p className="mb-4">
           We are committed to dealing with your complaints fairly and resolving
           issues in accordance with our policies. You can make a complaint or
           lodge a dispute by emailing us at help@nine25.app.
         </p>
-        <p className="my-4 font-bold">11. Australian Consumer Law</p>
+        <p className="text-3xl my-4 font-bold">11. Australian Consumer Law</p>
         <p className="mb-4">
           Certain legislation, including the Australian Consumer Law (ACL) in
           Schedule 2 of the Competition and Consumer Act 2010 (Cth), and similar
@@ -392,7 +392,7 @@ const aboutus = () => {
         <p className="mb-4">
           This clause will survive the termination or expiry of these Terms.
         </p>
-        <p className="my-4 font-bold">12. Liability</p>
+        <p className="text-3xl my-4 font-bold">12. Liability</p>
         <p className="mb-4 font-bold">12.1 Exclusion of liability</p>
         <p className="mb-4">
           Despite anything to the contrary, to the maximum extent permitted by
@@ -442,7 +442,7 @@ const aboutus = () => {
         <p className="mb-4">
           This clause will survive the termination or expiry of these Terms.
         </p>
-        <p className="my-4 font-bold">13. Termination</p>
+        <p className="text-3xl my-4 font-bold">13. Termination</p>
         <p className="mb-4">
           Your Account and these Terms may be terminated by you at any time, by
           cancelling your Account as set out above in these Terms.
@@ -503,7 +503,7 @@ const aboutus = () => {
         <p className="mb-4">
           This clause will survive the termination or expiry of these Terms.
         </p>
-        <p className="my-4 font-bold">14. User Data</p>
+        <p className="text-3xl my-4 font-bold">14. User Data</p>
         <p className="mb-4">
           You grant us a limited licence to copy, transmit, store and back-up or
           otherwise access the information, and other data provided by you to us
@@ -532,7 +532,7 @@ const aboutus = () => {
           Data. We may, at any time at our sole discretion, remove any User
           Data.
         </p>
-        <p className="my-4 font-bold">15. Analytics</p>
+        <p className="text-3xl my-4 font-bold">15. Analytics</p>
         <p className="mb-4">
           We may monitor, analyse and compile statistical and performance
           information based on and/or related to your use of the Nine25 App, in
@@ -555,7 +555,7 @@ const aboutus = () => {
           content used or provided in connection with the Analytics, including
           all intellectual property rights in the foregoing.
         </p>
-        <p className="my-4 font-bold">16. Feedback</p>
+        <p className="text-3xl my-4 font-bold">16. Feedback</p>
         <p className="mb-4">You agree that:</p>
         <ul>
           <li className="mb-2">
@@ -570,7 +570,7 @@ const aboutus = () => {
             of any use by us of any Feedback.
           </li>
         </ul>
-        <p className="my-4 font-bold">17. Third Party Inputs</p>
+        <p className="text-3xl my-4 font-bold">17. Third Party Inputs</p>
         <p className="mb-4">
           You agree that the provision of the Nine25 App may be contingent on,
           or impacted by, third parties or any goods and services provided by
@@ -582,7 +582,7 @@ const aboutus = () => {
           default or breach was caused or contributed to by any Third Party
           Inputs.{" "}
         </p>
-        <p className="my-4 font-bold">18. Notice regarding Apple</p>
+        <p className="text-3xl my-4 font-bold">18. Notice regarding Apple</p>
         <p className="mb-4">
           To the extent that you are using or accessing our Nine25 App on an iOS
           device, you further acknowledge and agree to the terms of this clause.
@@ -634,7 +634,7 @@ const aboutus = () => {
           and (2) you are not listed on any U.S. Government list of prohibited
           or restricted parties.
         </p>
-        <p className="my-4 font-bold">19. General</p>
+        <p className="text-3xl my-4 font-bold">19. General</p>
         <p className="mb-4">
           <span className="font-bold">Assignment: </span> You must not assign or
           deal with the whole or any part of your rights or obligations under
@@ -788,7 +788,9 @@ const aboutus = () => {
           <span className="font-bold">Website</span> means https://nine25.app/
         </p>
 
-        <p className="my-4 font-bold text-xl">Last update: 20 December 2021</p>
+        <p className="my-4 font-bold text-xl mb-24">
+          Last update: 20 December 2021
+        </p>
       </div>
 
       {/* <div className="bg-gray-lighter w-full flex items-center justify-center flex-col p-12">
