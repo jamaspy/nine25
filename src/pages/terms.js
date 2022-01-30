@@ -13,7 +13,7 @@ const aboutus = () => {
         rootRoute="/"
         currentLabel="Terms of Service"
       />
-      <div className="container m-auto px-8 md:px-36">
+      <div className="container m-auto px-8 md:px-36 text-xl">
         <p className="text-5xl font-semibold">Terms of service</p>
 
         <p className="text-3xl font-medium mt-8 mb-4">Welcome</p>

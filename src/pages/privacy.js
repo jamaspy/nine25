@@ -13,7 +13,7 @@ const aboutus = () => {
         rootRoute="/"
         currentLabel="Privacy Policy"
       />
-      <div className="container m-auto px-8 md:px-36">
+      <div className="container m-auto px-8 md:px-36 text-xl">
         <p className="text-3xl font-bold">Privacy Policy</p>
         <p className="text-xs mb-4">Last updated: March 5, 2021</p>
         <p className="mb-4">
