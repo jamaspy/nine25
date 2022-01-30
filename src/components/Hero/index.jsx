@@ -23,7 +23,7 @@ const index = ({ device }) => {
         >
           Your salary.
         </p>
-        <div className="overflow-hidden flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start mt-8 text-xl text-center md:text-left px-4 md:p-0 ">
+        <div className="overflow-hidden flex flex-row flex-wrap items-center justify-center md:items-start md:justify-start md:mt-6 xl:mt-8 text-xl text-center md:text-left px-4 md:p-0 ">
           <p>The</p>{" "}
           <span className="bg-primary mx-1">
             <Typical

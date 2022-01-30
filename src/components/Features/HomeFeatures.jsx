@@ -6,7 +6,7 @@ const HomeFeatures = () => {
   return (
     <div className="shrink flex flex-col ">
       <div className="w-full pt-24">
-        <p className="text-5xl text-center text-blacked font-bold">
+        <p className="text-4xl xl:text-5xl text-center text-blacked font-bold px-3">
           What we provide
         </p>
       </div>

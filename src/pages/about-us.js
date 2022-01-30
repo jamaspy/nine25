@@ -70,7 +70,7 @@ const AboutUs = () => {
           </p>
         </div>
         <div className="container py-12 grid gap-4 grid-cols-1 md:grid-cols-2 mx-auto">
-          <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden xl:px-8 xl:pt-8 px-4 pt-4">
             <div className="p-4">
               <p className="text-2xl font-bold mb-4">Be Responsible</p>
               <p className="mb-2 text-lg">
@@ -83,7 +83,7 @@ const AboutUs = () => {
             </div>
             <Responsible />
           </div>
-          <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-center justify-between rounded-3xl bg-white shadow overflow-hidden xl:px-8 xl:pt-8 px-4 pt-4">
             <div className="p-4">
               <p className="text-2xl font-bold mb-4">Drive Positive Outcomes</p>
               <p className="mb-2 text-lg">
@@ -100,7 +100,7 @@ const AboutUs = () => {
             </div>
             <Positive />
           </div>
-          <div className="border flex flex-col items-end justify-between rounded-3xl bg-white shadow overflow-hidden">
+          <div className="border flex flex-col items-end justify-between rounded-3xl bg-white shadow overflow-hidden xl:pl-8 xl:pt-8 pl-4 pt-4">
             <div className="p-4">
               <p className="text-2xl font-bold mb-4">We Keep It Simple</p>
               <p className="mb-2 text-lg">
@@ -111,7 +111,7 @@ const AboutUs = () => {
             </div>
             <Simple />
           </div>
-          <div className="flex flex-col justify-between rounded-3xl bg-white shadow">
+          <div className="flex flex-col justify-between rounded-3xl bg-white shadow xl:pl-8 xl:pt-8 pl-4 pt-4">
             <div className="p-4">
               <p className="text-2xl font-bold mb-4">Don't Be A D*ckhead</p>
               <p className="mb-2 text-lg">
@@ -126,8 +126,8 @@ const AboutUs = () => {
           </div>
         </div>
       </div>
-      <div className="container bg-white mx-auto py-12 px-4 lg:px-0">
-        <p className="lg:text-5xl md:text-4xl text-3xl font-bold mb-4 text-center">
+      <div className="container bg-white mx-auto pt-12 pb-24 px-4 lg:px-0">
+        <p className="lg:text-5xl md:text-4xl text-3xl font-bold mb-12 text-center">
           Meet our team
         </p>
         <MeetTeam />

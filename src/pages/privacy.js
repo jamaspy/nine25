@@ -13,8 +13,8 @@ const aboutus = () => {
         rootRoute="/"
         currentLabel="Privacy Policy"
       />
-      <div className="container m-auto px-8 md:px-36">
-        <p className="text-2xl font-semibold">Privacy Policy</p>
+      <div className="container m-auto px-8 md:px-36 text-xl">
+        <p className="text-3xl font-bold">Privacy Policy</p>
         <p className="text-xs mb-4">Last updated: March 5, 2021</p>
         <p className="mb-4">
           This Privacy Policy is designed to empower and inform you about your
@@ -57,7 +57,7 @@ const aboutus = () => {
           If you decide to visit a third-party website via a link contained on
           the Services, you do so at your own risk.
         </p>
-        <p className="text-xl font-medium mt-8 mb-4">How we use information</p>
+        <p className="text-3xl font-medium mt-8 mb-4">How we use information</p>
         <p className="mb-4">
           Examples of specific ways in which Nine25 may use your Personal
           Information include, but are not limited to the following:
@@ -109,7 +109,7 @@ const aboutus = () => {
             demonstration.
           </li>
         </ul>
-        <p className="text-xl font-medium mt-8 mb-4">
+        <p className="text-3xl font-medium mt-8 mb-4">
           When do we disclose the Personal Information we collect?
         </p>
         <p className="mb-4">
@@ -124,7 +124,7 @@ const aboutus = () => {
           you e-mails about your Account or any products or services you have
           requested or received from us, or for other customer service purposes.
         </p>
-        <p className="text-xl font-medium mt-8 mb-4">
+        <p className="text-3xl font-medium mt-8 mb-4">
           Marketing or promotional purposes
         </p>
         <p className="mb-4">
@@ -155,7 +155,7 @@ const aboutus = () => {
           companies for their everyday business purposes; or (3) any third
           parties so that they can market to you.
         </p>
-        <p className="text-xl font-medium mt-8 mb-4">
+        <p className="text-3xl font-medium mt-8 mb-4">
           Security of your Personal Information
         </p>
         <p className="mb-12">
