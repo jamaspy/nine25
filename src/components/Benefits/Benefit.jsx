@@ -29,19 +29,21 @@ const Benefit = ({
       key={index}
       className={`${
         isWide ? "md:col-span-2" : "col-span-1"
-      } bg-white overflow-hidden shadow-sm rounded-lg`}
+      } bg-white overflow-hidden shadow-sm rounded-lg pt-4`}
     >
       <div
         className={`flex ${
-          isWide ? "flex-col md:flex-row md:justify-between w-full" : "flex-col"
+          isWide
+            ? "flex-col-reverse md:flex-row md:justify-between w-full"
+            : "flex-col"
         }`}
       >
         {!isWide && (
-          <div className="flex-1 flex items-center justify-center">
+          <div className="flex-1 flex items-center justify-center xl:my-12 md:my-6 my-5">
             {renderImage()}
           </div>
         )}
-        <div className="flex-1 p-4 flex items-start justify-center flex-col">
+        <div className="flex-1 xl:p-12 md:p-8 p-6 flex items-start justify-center flex-col">
           <p className="text-3xl font-bold mb-4">{title}</p>
           <p className="text-xl font-medium mb-4">{subtitle}</p>
           {paragraphs.map((paragraph, index) => (
@@ -54,7 +56,7 @@ const Benefit = ({
           </p> */}
         </div>
         {isWide && (
-          <div className="flex-1 flex items-end justify-center">
+          <div className="flex-1 flex items-end justify-center xl:my-12 md;my-8">
             {renderImage()}
           </div>
         )}

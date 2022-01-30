@@ -26,7 +26,7 @@ const aboutus = () => {
         <div className="md:px-4 px-3">
           <p className="lg:text-6xl text-4xl font-bold text-left md:text-center my-8 lg:leading-relaxed">
             Why incorporate Nine25’s salary streaming technology into your
-            business?asdasdas
+            business?
           </p>
         </div>
         <div className="container grid gap-8 grid-cols-1 md:grid-cols-2 px-2">
