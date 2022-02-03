@@ -3,7 +3,7 @@ export const home_features = [
     id: 1,
     title: "Privacy",
     subtitle:
-      "Your privacy is number one and there’s no cross app tracking. We’ve got your back.",
+      "Privacy is number one. There's no cross app tracking here. We've got your back.",
   },
   {
     id: 2,
@@ -15,6 +15,6 @@ export const home_features = [
     id: 3,
     title: "Innovation",
     subtitle:
-      "Nine25’s salary streaming technology is a world first in financial services. We are Guinness World Records material (someone call them) - we are just getting started.",
+      "Nine25’s salary streaming technology is a world first in financial services. We are Guinness World Records material (someone call them) because we are just getting started.",
   },
 ];

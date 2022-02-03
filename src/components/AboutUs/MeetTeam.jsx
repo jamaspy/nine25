@@ -13,7 +13,7 @@ const MeetTeam = () => {
             gatsbyImageData(
               layout: CONSTRAINED
               width: 300
-              placeholder: BLURRED
+              placeholder: NONE
               formats: [AUTO, WEBP, AVIF]
               quality: 100
             )

@@ -2,7 +2,7 @@ export const home_benefits = [
   {
     id: 1,
     title: "Spend",
-    subtitle: "Money management but make it effortless.",
+    subtitle: "Waiting for payday is a thing of the past.",
     isWide: true,
     isComingSoon: false,
     paragraphs: [
@@ -27,7 +27,7 @@ export const home_benefits = [
     isWide: false,
     isComingSoon: true,
     paragraphs: [
-      "Get started on your investment journey for the price of large soy flat white. Nine25 can consistenly calculate & stream your income into your wealyh empire over time.",
+      "Get started on your investment journey for the price of large soy flat white. Nine25 can consistenly calculate & stream your income into your wealth empire over time.",
     ],
   },
 ];
