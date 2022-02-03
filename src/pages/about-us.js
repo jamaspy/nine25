@@ -21,11 +21,11 @@ const AboutUs = () => {
         <p className="text-lg">
           Nine25 (pronounced nine-to-five) wants to bring the way we get paid to
           the digital era. The concept of a paycheque is alien to anyone who's
-          under 30 years. It's a relic from the pre-computerised age when an
-          actual person had to sit and write out a cheque for every employee.
-          That work took weeks. So people got paid once a fortnight or once a
-          month. At Nine25, we're upending this old world relic with our
-          real-time salarystreaming service.
+          under 30. It's a relic from the pre-computerised age when an actual
+          person had to sit and write out a cheque for every employee. That work
+          took weeks. So people got paid once a fortnight or once a month. At
+          Nine25, we're upending this old world relic with our real-time Salary
+          Streaming service.
         </p>
       </div>
       <div
@@ -51,16 +51,15 @@ const AboutUs = () => {
         <p className="mb-12 text-lg">
           Technology is progressing at a rapid rate and our lifestyles are
           thriving because of it. The financial world on the other hand, is
-          lagging In comparison to our fast paced, quick access way of living,
-          the ancient idea of a 'Pay Day' is becoming harder to comprehend. Why
-          do we still wait up to a week, a fortnight or even a month for our
-          pockets to replenish and our freedoms to carry on. We want to have
-          live-access to our pay as we earn it. We stream movies, tv shows,
-          music - we even stream our personal lives online. It's time we are
-          able to do the same with our money. Managing finances is tricky - on
-          your own. Nine25 has the financial know-how and we believe financial
-          freedom is possible for everyone, so we are building the technology to
-          enable it.
+          lagging. In comparison to our quick access way of living, the ancient
+          idea of a 'Pay Day' is becoming harder to comprehend. Why do we still
+          wait up to a week, a fortnight or even a month for our pockets to
+          replenish and our freedoms to carry on. We want to have live-access to
+          our pay as we earn it. We stream movies, tv shows, music - we even
+          stream our personal lives online. It's time we are able to do the same
+          with our money. Managing finances is tricky - on your own. Nine25 has
+          the financial know-how and we believe financial freedom is possible
+          for everyone, so we are building the technology to enable it.
         </p>
       </div>
       <div className=" bg-gray-lighter px-4 pt-12">
@@ -118,8 +117,8 @@ const AboutUs = () => {
                 Simple advice on how to be a better human.
               </p>
               <p className="mb-2 text-lg">
-                The world already has enough of them - embrace individuality by
-                not being one.
+                The world already has enough of them - embrace individuality and
+                don't be one.
               </p>
             </div>
             <DHead />
