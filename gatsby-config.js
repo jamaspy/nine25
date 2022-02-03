@@ -70,7 +70,6 @@ module.exports = {
       options: {
         defaults: {
           formats: [`auto`, `webp`],
-          placeholder: `dominantColor`,
           quality: 90,
           breakpoints: [750, 1080, 1366, 1920],
           backgroundColor: `transparent`,
