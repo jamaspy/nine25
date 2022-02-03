@@ -11,7 +11,6 @@ const Benefit = ({
   isWide,
   isComingSoon,
 }) => {
-  console.log(title, subtitle, paragraphs, index, isWide, isComingSoon);
   const renderImage = () => {
     switch (title) {
       case "Spend":

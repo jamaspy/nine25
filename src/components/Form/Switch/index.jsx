@@ -18,9 +18,6 @@ const Switch = () => {
           type="checkbox"
           name="toggle"
           id="toggle"
-          onChange={(e) => {
-            console.log(e.target.checked);
-          }}
           className="
       toggle-checkbox
       absolute

@@ -78,9 +78,6 @@ const ContactForm = ({ heading, pageTitle }) => {
               type="checkbox"
               name="consent"
               id="toggle"
-              onChange={(e) => {
-                console.log(e.target.checked);
-              }}
               className="
       toggle-checkbox
       absolute
