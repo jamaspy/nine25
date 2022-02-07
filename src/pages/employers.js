@@ -25,7 +25,7 @@ const aboutus = () => {
         </div>
         <div className="md:px-4 px-3">
           <p className="lg:text-6xl text-4xl font-bold text-left md:text-center my-8 lg:leading-relaxed">
-            Why incorporate Nine25’s salary streaming technology into your
+            Why incorporate Nine25’s Salary Streaming technology into your
             business?
           </p>
         </div>
@@ -38,19 +38,19 @@ const aboutus = () => {
                 Show the candidate market that you care
               </p>
               <p className="mb-4">
-                Too talent are actively seeking out companies that care about
+                Top talent are actively seeking out companies that care about
                 their financial wellbeing. An employer of choice places the
-                mental & financial health of their people at the centre of their
-                corporate strategy & identity. This is more important than ever
-                given:
+                mental and financial health of their people at the centre of
+                their corporate strategy and identity. This is more important
+                than ever, given that;
               </p>
               <p className="mb-4 pl-1">
                 • 58% of Australian employees call out financial stress as the
                 biggest issue in their lives.
               </p>
               <p className="mb-4 pl-1">
-                • Gen Z & Millenials are choosing employers that will help them
-                to avoid debt & grow their wealth.
+                • Gen Z and Millenials are choosing employers that will help
+                them to avoid debt and grow their wealth.
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ const aboutus = () => {
             <div className="">
               <p className="text-2xl font-bold mb-4">Retain</p>
               <p className="text-xl mb-4 font-medium">
-                It’s expensive and time consuming replacing people
+                Replacing employees is expensive and time consuming.
               </p>
               <p className="mb-4">
                 According to EY, 20% of employee turnover is attributable to
@@ -67,9 +67,12 @@ const aboutus = () => {
               </p>
               <p className="mb-4">
                 It’s expensive! Replacing a $60,000 position can cost your
-                business $90,000 in recruitment costs & time.Nine25’s Salary
-                Streaming technology will help to increase employee retention by
-                an average of 30% and can help to reduce lost productivity.
+                business $90,000 in recruitment costs and time.
+              </p>
+              <p className="mb-4">
+                Nine25’s Salary Streaming technology will help to increase
+                employee retention by an average of 30% and can help to reduce
+                lost productivity.
               </p>
             </div>
           </div>
@@ -81,15 +84,18 @@ const aboutus = () => {
                 Invest in a benefit program that will change lives
               </p>
               <p className="mb-4">
-                Nine25’s personalised analytics will lead to better decesion
-                making & budget allocation. Are you sure that investments being
-                made within your health & wellbeing programs are having the
-                maximum benefit to your team? 84% of employees say they are
-                embarrased to ask for help with financial stress.
+                Nine25’s personalised analytics will lead to better decision
+                making and budget allocation.
+              </p>
+              <p className="mb-4">
+                Are you sure that investments being made within your health and
+                wellbeing programs are having the maximum benefit to your team?
+                84% of employees say they are embarrased to ask for help with
+                financial stress.
               </p>
               <p className="mb-4">
                 Coming soon: Nine25 will be delivering insights that your
-                business can leverage to onform better decision making.
+                business can leverage to inform better decision making.
               </p>
             </div>
 
@@ -107,20 +113,20 @@ const aboutus = () => {
             <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Health />
               <p className="font-bold text-xl lg:text-3xl mt-8">
-                Financial Health & Responsible Money Management App
+                Financial health and responsible money management app
               </p>
             </div>
             <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Debit />
               <p className="font-bold text-xl lg:text-3xl mt-8">
-                Real Time Salary Streaming & Debit Card
+                Real time Salary Streaming and debit card
               </p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center max-w-xs mx-auto">
             <Analytics />
             <p className="font-bold text-xl lg:text-3xl mt-8">
-              Personalised analytics & reporting
+              Personalised analytics and reporting
             </p>
           </div>
         </div>
