@@ -61,9 +61,9 @@ const AboutUs = () => {
         </p>
         <p className="mb-12 text-lg">
           Managing finances is tricky - on your own. Nine25 has the financial
-          know-how and confidence that financial freedom is reachable for
+          know-how and the confidence that financial freedom is reachable for
           everyone. That's why we are building the technology to help you snatch
-          it!.
+          it!
         </p>
       </div>
       <div className=" bg-gray-lighter px-4 pt-12">
