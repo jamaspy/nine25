@@ -17,17 +17,17 @@ export const home_benefits = [
     isComingSoon: false,
     paragraphs: [
       "No more pesky bills catching you off guard. With the technology we’ve developed, your budgeting is sorted for you.",
-      "The Nine25 app tracks your bills and automatically stashes your cash - making sure you have enough money to pay your bills in full and on time - every time.",
+      "The Nine25 App tracks your bills and automatically stashes your cash, making sure you have enough money to pay your bills in full and on time - every time.",
     ],
   },
   {
     id: 3,
     title: "Invest",
-    subtitle: "ETFs and shares staring at $5.",
+    subtitle: "ETFs and shares starting at $5.",
     isWide: false,
     isComingSoon: true,
     paragraphs: [
-      "Get started on your investment journey for the price of large soy flat white. Nine25 can consistenly calculate & stream your income into your wealth empire over time.",
+      "Get started on your investment journey for the price of a large soy flat white. Nine25 can consistently calculate and stream your income into your wealth empire over time.",
     ],
   },
 ];

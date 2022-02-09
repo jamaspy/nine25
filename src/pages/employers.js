@@ -35,7 +35,7 @@ const aboutus = () => {
             <div className="">
               <p className="text-2xl font-bold mb-4">Attract</p>
               <p className="text-xl mb-4 font-medium">
-                Show the candidate market that you care
+                Show the candidate market that you care.
               </p>
               <p className="mb-4">
                 Top talent are actively seeking out companies that care about
@@ -81,16 +81,18 @@ const aboutus = () => {
             <div className="md:mr-8 md:w-1/2">
               <p className="text-2xl font-bold mb-4">Engage</p>
               <p className="text-xl mb-4 font-medium">
-                Invest in a benefit program that will change lives
+                Invest in a benefit program that will change lives.
               </p>
               <p className="mb-4">
                 Nine25’s personalised analytics will lead to better decision
                 making and budget allocation.
               </p>
               <p className="mb-4">
-                Are you sure that investments being made within your health and
-                wellbeing programs are having the maximum benefit to your team?
-                84% of employees say they are embarrased to ask for help with
+                Are you sure that investments being made, within your health and
+                wellbeing programs, are having the maximum benefit to your team?
+              </p>
+              <p className="mb-4">
+                84% of employees say they are embarrassed to ask for help with
                 financial stress.
               </p>
               <p className="mb-4">
@@ -113,20 +115,20 @@ const aboutus = () => {
             <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Health />
               <p className="font-bold text-xl lg:text-3xl mt-8">
-                Financial health and responsible money management app
+                Financial health and responsible money management app.
               </p>
             </div>
             <div className="flex flex-col items-center justify-center mb-8 max-w-xs mx-auto">
               <Debit />
               <p className="font-bold text-xl lg:text-3xl mt-8">
-                Real time Salary Streaming and debit card
+                Real-time Salary Streaming and debit card.
               </p>
             </div>
           </div>
           <div className="flex flex-col items-center justify-center max-w-xs mx-auto">
             <Analytics />
             <p className="font-bold text-xl lg:text-3xl mt-8">
-              Personalised analytics and reporting
+              Personalised analytics and reporting.
             </p>
           </div>
         </div>
