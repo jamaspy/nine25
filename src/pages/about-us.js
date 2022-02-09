@@ -23,7 +23,7 @@ const AboutUs = () => {
           the digital era. The concept of a paycheque is alien to anyone who's
           under 30. It's a relic from the pre-computerised age when an actual
           person had to sit and write out a cheque for every employee. That work
-          took weeks. So people got paid once a fortnight or once a month. At
+          took weeks. So, people got paid once a fortnight or once a month. At
           Nine25, we're upending this old world relic with our real-time Salary
           Streaming service.
         </p>
@@ -48,18 +48,22 @@ const AboutUs = () => {
         <p className="lg:text-5xl md:text-4xl text-3xl font-bold mb-4">
           Our mission
         </p>
-        <p className="mb-12 text-lg">
+        <p className="mb-4 text-lg">
           Technology is progressing at a rapid rate and our lifestyles are
           thriving because of it. The financial world on the other hand, is
-          lagging. In comparison to our quick access way of living, the ancient
-          idea of a 'Pay Day' is becoming harder to comprehend. Why do we still
-          wait up to a week, a fortnight or even a month for our pockets to
-          replenish and our freedoms to carry on. We want to have live-access to
-          our pay as we earn it. We stream movies, tv shows, music - we even
+          lagging. In comparison to our quick access way of living, the old
+          school idea of a 'pay day' is becoming harder to comprehend. Why do we
+          still wait up to a week, a fortnight or even a month for our pockets
+          to replenish and our freedoms to carry on. We want to have live-access
+          to our pay, as we earn it. We stream movies, TV shows, music - we even
           stream our personal lives online. It's time we are able to do the same
-          with our money. Managing finances is tricky - on your own. Nine25 has
-          the financial know-how and we believe financial freedom is possible
-          for everyone, so we are building the technology to enable it.
+          with our money.{" "}
+        </p>
+        <p className="mb-12 text-lg">
+          Managing finances is tricky - on your own. Nine25 has the financial
+          know-how and confidence that financial freedom is reachable for
+          everyone. That's why we are building the technology to help you snatch
+          it!.
         </p>
       </div>
       <div className=" bg-gray-lighter px-4 pt-12">
@@ -76,8 +80,7 @@ const AboutUs = () => {
                 We don’t believe in profiteering at all costs and we are
                 definitely not about young adults being shoved toward a lifetime
                 of debt and repayments. We believe financial freedom is
-                reachable for everyone and we are building the technology to
-                help you snatch it.
+                reachable for everyone!
               </p>
             </div>
             <Responsible />
@@ -87,14 +90,14 @@ const AboutUs = () => {
               <p className="text-2xl font-bold mb-4">Drive Positive Outcomes</p>
               <p className="mb-2 text-lg">
                 This is why we do what we do! At the heart of every decision we
-                make, now and in the future, are our Nine25er's and the world's
-                wellbeing.
+                make, now and in the future, is the wellbeing of our Nine25er's
+                and the world.
               </p>
               <p className="mb-2 text-lg">
                 From the logic that powers our money management algorithm to our
-                Nine25er's spending sustainably. We at Nine25 want to ensure a
-                positive impact for our users, stakeholders, employees and the
-                planet.
+                Nine25er's spending sustainably. We, at Nine25, want to ensure a
+                positive impact for our customers, stakeholders, employees and
+                the planet.
               </p>
             </div>
             <Positive />
@@ -103,9 +106,9 @@ const AboutUs = () => {
             <div className="p-4">
               <p className="text-2xl font-bold mb-4">We Keep It Simple</p>
               <p className="mb-2 text-lg">
-                We make finances manageable to the everyday person. With a
+                We make finances manageable for the everyday person. With a
                 seamless integration into your lifestyle, Nine25 does all the
-                heavy lifting for you (but not at the gym - thats all you).
+                heavy lifting for you (but not at the gym - thats all you!).
               </p>
             </div>
             <Simple />

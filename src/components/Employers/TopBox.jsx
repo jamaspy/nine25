@@ -20,7 +20,7 @@ const TopBox = () => {
       >
         <div className="w-3/4 lg:mb-24">
           <p className="lg:text-6xl text-4xl font-bold text-center mb-8 lg:leading-normal">
-            Improving the financial health of your employees starts today
+            Improving the financial health of your employees starts today.
           </p>
           <div className="hidden md:flex md:flex-row justify-center items-center lg:mt-8 w-full">
             {/* <SecondaryButton text="Get Started" className="mr-8" /> */}
@@ -48,7 +48,7 @@ const TopBox = () => {
       >
         <div className="w-3/4 md:mb-24">
           <p className="lg:text-5xl md:text-4xl text-3xl font-semibold text-center mb-8 lg:leading-relaxed">
-            Improving the financial health of your employees starts today
+            Improving the financial health of your employees starts today.
           </p>
           <div className="hidden md:flex md:flex-row justify-center items-center lg:mt-8 w-full">
             {/* <MobileSecondaryButton text="Get Started" className="mr-4" /> */}
@@ -76,7 +76,7 @@ const TopBox = () => {
       >
         <div className="my-28">
           <p className="text-4xl font-bold text-center mb-12 lg:leading-relaxed px-4 leading-relaxed">
-            Improving the financial health of your employees starts today
+            Improving the financial health of your employees starts today.
           </p>
           <div className="flex flex-col justify-center items-center lg:mt-20 w-full">
             {/* <MobileSecondaryButton text="Get Started" className="mb-4" /> */}
