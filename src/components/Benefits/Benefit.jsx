@@ -63,7 +63,7 @@ const Benefit = ({
       {isComingSoon && (
         <div className="w-full bg-secondary py-8 px-4 relative">
           <p className="text-white w-2/3 font-medium text-lg">
-            Shop with the Nine25 card.
+            Shop with Nine25 card & pay your bills with direct debit.
           </p>
           <div className="absolute lg:-right-2 right-0 -top-12">
             <ComingSoonSVG />
